@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="bg-white py-16 dark:bg-primary">
       <div className="text-center">
         <p className="text-primary font-normal text-base mb-2 dark:text-white">
-          © 2022 Felix Macaspac. All rights reserved.
+          © 2022 Rishabh Pahwa. All rights reserved.
         </p>
         <p className="text-primary font-semibold text-base dark:text-white">
           Made with {"<3"}

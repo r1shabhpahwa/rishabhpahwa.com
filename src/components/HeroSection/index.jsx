@@ -6,17 +6,17 @@ const socials = [
   {
     logo: images.linkedinIcon,
     alt: "Linkedin Icon",
-    link: "https://www.linkedin.com/in/felixmacaspac/",
+    link: "https://www.linkedin.com/in/rishabh-pahwa/",
   },
   {
     logo: images.githubIcon,
     alt: "Github Icon",
-    link: "https://github.com/felixmacaspac",
+    link: "https://github.com/r1shabhpahwa",
   },
   {
     logo: images.codepenIcon,
     alt: "Codepen Icon",
-    link: "https://codepen.io/fmcmacaspac",
+    link: "https://codepen.io/",
   },
 ];
 
@@ -33,7 +33,7 @@ const HeroSection = () => {
               transition={{ type: "linear", duration: 0.5 }}
               className="hero__heading"
             >
-              Felix M.
+              Rishabh P.
             </motion.h1>
           </div>
         </div>
