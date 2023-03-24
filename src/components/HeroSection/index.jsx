@@ -13,11 +13,11 @@ const socials = [
     alt: "Github Icon",
     link: "https://github.com/r1shabhpahwa",
   },
-  {
-    logo: images.codepenIcon,
-    alt: "Codepen Icon",
-    link: "https://codepen.io/",
-  },
+  // {
+  //   logo: images.codepenIcon,
+  //   alt: "Codepen Icon",
+  //   link: "https://codepen.io/",
+  // },
 ];
 
 const HeroSection = () => {

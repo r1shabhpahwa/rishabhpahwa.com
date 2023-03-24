@@ -73,29 +73,24 @@ const TabSection = () => {
             className="w-full text-primary md:w-1/2 dark:text-white"
           >
             <h2 className="text-2xl font-semibold mb-2">
-              HubSpot CMS Developer | Frontend Developer
+              Software Development Enginner
             </h2>
             <p className="text-base font-normal text-neutral-700 dark:text-neutral-300">
-              Front-end Engineer with 2+ years of experience in developing and
-              implementing responsive, user-friendly websites and web
-              applications. Proficient in the use of HubSpot CMS, HubL, HTML,
-              CSS, and JavaScript. Skilled in utilizing modern front-end
-              technologies such as React, Nextjs, and Tailwind to deliver
-              exceptional user experiences. Responsible for bug fixing and
-              maintaining current projects. Certified HubSpot CMS Developer with
-              a track record of successfully completing projects utilizing the
-              platform.
+            Over 3 years of professional experience in SAP projects, working for a Fortune 500 client.
+            Experience in interaction with international clients in an Agile environment, along with writing Software design, testing, and development experience in SAP ABAP and various other modules along with theoretical knowledge of multiple domains such as SAP HANA and SAP QM.
+            Explored various other technologies such as Java, Android App development, C, and C++ through academic projects and participation in technical events and workshops.
+            Sharpened communication, teamwork, and problem-solving abilities through active collaboration with project teams, colleagues, and clients.
             </p>
             <br />
             <h3 className="font-semibold text-xl mb-2">Certifications 📝:</h3>
             <ul className="list-inside list-disc text-neutral-700 dark:text-neutral-300">
               <li>
                 <a
-                  href="https://app.hubspot.com/academy/achievements/9z322p95/en/1/felix-macaspac/hubspot-marketing-software"
+                  href="https://www.linkedin.com/learning/certificates/b171b5ea06edc9862339a492cb0e801611a42696b2b5622ffde03649254e9a7a?u=56973065"
                   className="underline"
                   target="_blank"
                 >
-                  Hubspot Marketing Software
+                  Scrum: Advanced
                   <span className="ml-1 inline-flex align-middle">
                     <ExternalLinkIcon className="h-5 w-5" />
                   </span>
@@ -103,11 +98,11 @@ const TabSection = () => {
               </li>
               <li>
                 <a
-                  href="https://app.hubspot.com/academy/achievements/clt3bnwb/en/1/felix-macaspac/hubspot-cms-for-developers"
+                  href="https://www.linkedin.com/learning/certificates/e0f7392996dcf0cb51ab8603f3b73d399d46f93c1db29c18af0e3ecdd6e9a995?u=56973065"
                   className="underline"
                   target="_blank"
                 >
-                  Hubspot CMS for Developers
+                  MongoDB
                 </a>
                 <span className="ml-1 inline-flex align-middle">
                   <ExternalLinkIcon className="h-5 w-5" />
@@ -115,15 +110,15 @@ const TabSection = () => {
               </li>
               <li>
                 <a
-                  href="https://app.hubspot.com/academy/achievements/4nsfl59x/en/1/felix-macaspac/hubspot-cms-for-marketers"
-                  className="underline"
+                  //href="https://app.hubspot.com/academy/achievements/4nsfl59x/en/1/felix-macaspac/hubspot-cms-for-marketers"
+                  //className="underline"
                   target="_blank"
                 >
-                  Hubspot CMS for Marketers
+                  Core Java & Android App Development, HPE
                 </a>
-                <span className="ml-1 inline-flex align-middle">
+                {/* <span className="ml-1 inline-flex align-middle">
                   <ExternalLinkIcon className="h-5 w-5" />
-                </span>
+                </span> */}
               </li>
             </ul>
           </motion.div>

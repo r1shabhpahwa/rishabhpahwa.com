@@ -33,15 +33,15 @@ const TwoColumnCard = () => {
             target="_blank"
             className="hover:underline"
           >
-            Hububble
+            Sopra Steria
           </a>
           <span className="mt-4 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
             <CalendarIcon className="h-4 mr-2 text-neutral-600 dark:text-neutral-300" />
-            MAY, 2021 - PRESENT
+            August, 2019 - August, 2022
           </span>
           <span className="mt-2 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
             <BriefcaseIcon className="h-4 mr-2 text-neutral-600 dark:text-neutral-300" />
-            JUNIOR FRONT-END ENGINEER
+            SENIOR SOFTWARE ENGINEER
           </span>
         </h6>
         <div className="relative mb-4">
@@ -60,17 +60,25 @@ const TwoColumnCard = () => {
 
         <ul className="text-base text-primary-400 list-inside list-disc dark:text-neutral-200">
           <li>
-            Developed web applications using JavaScript, React, Tailwind, and
-            NextJS.
+           Streamlined and managed the Supplier Technical Data Exchange (STDE) 
+           single-handedly project for two years, establishing an SAP WebDynpro 
+           based portal enabling the client's part suppliers to easily submit 
+           technical data, documentation, and manuals
           </li>
           <li>
-            Created and developed websites, landing pages, and email templates
-            using HubSpot CMS that are easy for clients to edit and optimized
-            for different devices
+           Assumed the role of technical owner for the project and ensured end-to-end 
+           delivery of all User Stories and code evolution to the client while resolving 
+           over 100 medium to high level incidents and change requests at the production level
           </li>
           <li>
-            Assisted in the maintenance and troubleshooting of client's websites
-            to ensure smooth performance and user satisfaction.
+           Demonstrated a functional understanding of the application and technical proficiency 
+           in crucial areas such as SAP WebDynpro, OO Reports & ALV, BADI, BAPI, IDOC, Data Dictionary, 
+           SAP Performance Tuning, and SQL optimization
+          </li>
+          <li>
+           Created comprehensive technical documentation, including a RTM, Design Documents, and 
+           detailed test plans to support unit testing and guarantee a low defect density of less 
+           than 1, elevating project deliverables' quality
           </li>
         </ul>
       </motion.div>
@@ -98,15 +106,15 @@ const TwoColumnCard = () => {
             target="_blank"
             className="hover:underline"
           >
-            Upwork
+            Sopra Steria
           </a>
           <span className="mt-4 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
             <CalendarIcon className=" text-neutral-600 h-4 mr-2 dark:text-neutral-300" />
-            OCTOBER, 2021 - PRESENT
+            JANUARY, 2019 - JULY, 2019
           </span>
           <span className="mt-2 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
             <BriefcaseIcon className="text-neutral-600 h-4 mr-2 dark:text-neutral-300" />
-            FREELANCE FRONT-END ENGINEER
+            INTERN
           </span>
         </h6>
         <div className="relative mb-4">
@@ -124,19 +132,9 @@ const TwoColumnCard = () => {
         </div>
         <ul className="text-base text-primary-400 list-inside list-disc dark:text-neutral-200">
           <li>
-            Developed and implemented CMS websites utilizing the HubSpot
-            platform, resulting in an efficient and user-friendly experience for
-            clients
-          </li>
-          <li>
-            Successfully resolved various technical issues for clients,
-            contributing to a positive and productive project experience
-          </li>
-          <li>
-            Achieved the top-rated badge on Upwork within four months of
-            starting as a freelancer, demonstrating exceptional performance and
-            customer satisfaction in delivering high-quality front-end
-            development services.
+            Developed a ticket booking system for a cinema hall to showcase skills 
+            and demonstrate proficiency in advanced ABAP concepts such as Module Pool, 
+            Function Module, ALVs, Data Dictionary, and Smart Forms
           </li>
         </ul>
       </motion.div>

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
-    image: images.zerowaste,
+    image: images.zerowasteImage,
     heading: "ZeroWaste",
     description:
       "Collaborated with a team of eight students to create and present a solution addressing common challenges in household waste management, including forgetfulness, e-waste recycling, kitchen waste disposal, automation, and mis-recycling.",
