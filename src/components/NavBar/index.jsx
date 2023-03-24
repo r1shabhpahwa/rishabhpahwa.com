@@ -26,11 +26,11 @@ const navlinks = [
     name: "Projects",
     href: "#projects",
   },
-  {
-    name: "HubSpot Components",
-    href: null,
-    type: "wip", // could be "new" or "wip".
-  },
+  // {
+  //   name: "HubSpot Components",
+  //   href: null,
+  //   type: "wip", // could be "new" or "wip".
+  // },
 ];
 
 export default function NavBar() {

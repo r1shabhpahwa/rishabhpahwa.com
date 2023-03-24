@@ -7,50 +7,26 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
-    image: images.bluecheckImage,
-    heading: "Bluecheck",
+    image: images.zerowaste,
+    heading: "ZeroWaste",
     description:
-      "<Also>One of my first freelance project.<p/> <br/> <p>I had some fun working with this project <i>independently.</i> Also improved a lot with the HubSpot CMS and tailwind CSS</p>",
+      "Collaborated with a team of eight students to create and present a solution addressing common challenges in household waste management, including forgetfulness, e-waste recycling, kitchen waste disposal, automation, and mis-recycling.",
+    //websiteLink: "https://shorten-app.netlify.app/",
+    githubLink: "https://github.com/luv9/zero-waste",
+    // techno
     html: true,
     css: true,
     javascript: true,
-    hubspot: true,
-    tailwind: true,
+    react: true,
   },
   {
     id: 2,
-    image: images.shortlyImage,
-    heading: "Shortly",
+    image: images.aicImage,
+    heading: "Automatic Image Coloration",
     description:
-      "One of my frontendmentor.io challenge projects! Had a good one working with this one and enhance my JavaScript and CSS skills.",
-    websiteLink: "https://shorten-app.netlify.app/",
-    githubLink: "https://github.com/felixmacaspac/fem-url-shortener-website",
-    // techno
-    html: true,
-    css: true,
-    javascript: true,
-  },
-  {
-    id: 3,
-    image: images.sunnysideImage,
-    heading: "Sunnyside",
-    description:
-      "<p>Simple frontendmentor.io challenge project! Also had a lot of fun working with the UI of this project.</p>",
-    websiteLink: "https://sunny-page.netlify.app/",
-    githubLink: "https://github.com/felixmacaspac/fem-sunnyside-landing-page",
-    // techno
-    html: true,
-    css: true,
-    javascript: true,
-  },
-  {
-    id: 4,
-    image: images.catifyImage,
-    heading: "Catify",
-    description:
-      "<p>Started this project way back 2020. One of my first project when I was self-studying front-end development.</p> <br/> <p>Fun fact: I had this project idea because of tinder lol! instead of <i>people</i> this website is for cats! </p>",
-    websiteLink: "https://catify-app.netlify.app/",
-    githubLink: "https://github.com/felixmacaspac/catify-landing-page",
+      "<p>Led a team of three students to develop an automated image colourization project by combining a deep Convolutional Neural Network with high-level features from the pre-trained InceptionResNet-v2 model. Trained a Convolutional Neural Network from scratch using a dataset of over a thousand images and designed an encoder-decoder model capable of handling images of any size and aspect ratio, ensuring efficient and accurate image colourization</p>",
+    //websiteLink: "https://sunny-page.netlify.app/",
+    githubLink: "https://github.com/r1shabhpahwa/Auto-color",
     // techno
     html: true,
     css: true,
