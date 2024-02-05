@@ -34,7 +34,7 @@
   /* Styles for the animated title */
   .hero__subtext {
     @apply text-xs sm:text-base font-medium font-default text-primary-400 dark:text-opacity-80 dark:text-white;
-    padding-top: 1rem; /* Space above the animated title */
+    padding-top: 2rem; /* Space above the animated title */
   }
 }
 
