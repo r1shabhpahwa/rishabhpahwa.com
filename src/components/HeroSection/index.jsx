@@ -15,7 +15,7 @@ const socials = [
   },
 ];
 
-const titles = ['TRAVELER', 'FOODIE', 'GAMER', 'TECH ENTHUSIAST', 'LEARNER', 'CHESS PLAYER', 'COFFEE CONNOISSEUR'];
+const titles = ['TRAVELER', 'COFFEE CONNOISSEUR', 'LEARNER', 'GAMER', 'TECH ENTHUSIAST', 'FOODIE', 'CHESS PLAYER'];
 
 // Custom hook for typewriter effect
 const useTypewriter = (words, delay = 1000) => {
