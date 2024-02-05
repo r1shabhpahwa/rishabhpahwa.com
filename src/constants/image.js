@@ -18,6 +18,7 @@ import catifyImage from "../assets/projects/catify-visible.png";
 import shortlyImage from "../assets/projects/shortly-visible.png";
 import sunnysideImage from "../assets/projects/sunnyside-visible.png";
 import zerowasteImage from "../assets/projects/zerowaste-visible.png" ;
+import eAcademyImage from "../assets/projects/eAcademy-project.png" ;
 import snaImage from "../assets/projects/sna-project.png" ;
 import aicImage from "../assets/projects/aic-visible.png";
 import errorIllustration from "../assets/illustrations/404-vector.svg";
@@ -60,4 +61,5 @@ export default {
   pythonLogo,
   rishabhHey,
   snaImage,
+  eAcademyImage
 };

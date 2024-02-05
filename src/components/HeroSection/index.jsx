@@ -1,21 +1,53 @@
-import React from "react";
-import images from "../../constants/image";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from 'react';
+import images from '../../constants/image';
+import { motion } from 'framer-motion';
 
 const socials = [
   {
     logo: images.linkedinIcon,
-    alt: "LinkedIn Icon",
-    link: "https://www.linkedin.com/in/rishabh-pahwa/",
+    alt: 'LinkedIn Icon',
+    link: 'https://www.linkedin.com/in/rishabh-pahwa/',
   },
   {
     logo: images.githubIcon,
-    alt: "GitHub Icon",
-    link: "https://github.com/r1shabhpahwa",
+    alt: 'GitHub Icon',
+    link: 'https://github.com/r1shabhpahwa',
   },
 ];
 
+const titles = ['TRAVELER', 'FOODIE', 'GAMER', 'TECH ENTHUSIAST', 'LEARNER', 'CHESS PLAYER', 'COFFEE CONNOISSEUR'];
+
+// Custom hook for typewriter effect
+const useTypewriter = (words, delay = 1000) => {
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
+  const [reverse, setReverse] = useState(false);
+
+  useEffect(() => {
+    if (subIndex === words[index].length + 1 && !reverse) {
+      setTimeout(() => setReverse(true), delay);
+      return;
+    }
+
+    if (subIndex === 0 && reverse) {
+      setReverse(false);
+      setIndex((prevIndex) => (prevIndex + 1) % words.length);
+      // No immediate return here; let the effect continue to increment subIndex.
+    }
+
+    const timeout = setTimeout(() => {
+      setSubIndex((prevSubIndex) => prevSubIndex + (reverse ? -1 : 1));
+    }, Math.max(reverse ? 75 : subIndex === words[index].length ? 500 : 150, parseInt(Math.random() * 350)));
+
+    return () => clearTimeout(timeout);
+  }, [subIndex, index, reverse, delay, words]);
+
+  return words[index].substring(0, subIndex);
+};
+
 const HeroSection = () => {
+  const animatedTitle = useTypewriter(titles);
+
   return (
     <section id="home" className="bg-white dark:bg-primary">
       <div className="container relative">
@@ -25,11 +57,19 @@ const HeroSection = () => {
               viewport={{ once: true }}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ type: "linear", duration: 0.5 }}
+              transition={{ type: 'linear', duration: 0.5 }}
               className="hero__heading"
             >
               Rishabh P.
             </motion.h1>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="hero__subtext"
+            >
+              BUT ALSO A <span className="text-primary">{animatedTitle}</span>
+            </motion.div>
           </div>
         </div>
         <div className="w-full relative bottom-20 md:w-auto md:absolute md:top-[70%]">
@@ -44,7 +84,7 @@ const HeroSection = () => {
                     ease: [0, 0.71, 0.2, 1.01],
                   },
                   scale: {
-                    type: "spring",
+                    type: 'spring',
                     damping: 5,
                     stiffness: 100,
                     restDelta: 0.001,

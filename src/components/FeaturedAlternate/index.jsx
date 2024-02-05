@@ -7,17 +7,15 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
-    image: images.zerowasteImage,
-    heading: "DataWeaver: Enhanced Web Scraper Tool",
+    image: images.eAcademyImage,
+    heading: "eAcademy - Online Learning Platform",
     description:
-      "DataWeaver is a sophisticated web scraping tool developed to streamline the process of data extraction from the web. Utilizing the power of Java and the jsoup library, it offers advanced HTML parsing and efficient web crawling capabilities.",
-    //websiteLink: "https://shorten-app.netlify.app/",
-    githubLink: "https://github.com/luv9/zero-waste",
+      "<p>eAcademy is a feature-rich online learning platform developed using Django, Python, and PyCharm. It offers a comprehensive set of functionalities to create an interactive and seamless learning experience for both instructors and students. The platform encompasses various features, including course creation and management, membership options, payment gateway integration, and student progress tracking.</p>",
+    githubLink: "https://github.com/r1shabhpahwa/eAcademy",
     // techno
     html: true,
     css: true,
     javascript: true,
-    react: true,
   },
   {
     id: 2,
@@ -41,19 +39,6 @@ const projects = [
       "<p>This project entailed a comprehensive analysis of global sentiments and social networks based on 250,000 tweets related to 'ChatGPT'. <br/>It showcases the application of advanced data science techniques to understand public perception and network dynamics on social media platforms.</p>",
     //websiteLink: "https://sunny-page.netlify.app/",
     githubLink: "https://github.com/r1shabhpahwa/ChatGPT-Tweets-Social-Netork-Analysis",
-    // techno
-    html: true,
-    css: true,
-    javascript: true,
-  },
-  {
-    id: 4,
-    image: images.aicImage,
-    heading: "Automatic Image Coloration",
-    description:
-      "<p>Led a team of three students to develop an automated image colourization project by combining a deep Convolutional Neural Network with high-level features from the pre-trained InceptionResNet-v2 model. Trained a Convolutional Neural Network from scratch using a dataset of over a thousand images and designed an encoder-decoder model capable of handling images of any size and aspect ratio, ensuring efficient and accurate image colourization</p>",
-    //websiteLink: "https://sunny-page.netlify.app/",
-    githubLink: "https://github.com/r1shabhpahwa/Auto-color",
     // techno
     html: true,
     css: true,
