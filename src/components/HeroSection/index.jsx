@@ -68,7 +68,7 @@ const HeroSection = () => {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="hero__subtext"
             >
-              BUT ALSO A <span className="text-primary">{animatedTitle}</span>
+              BUT ALSO A {animatedTitle}
             </motion.div>
           </div>
         </div>
