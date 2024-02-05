@@ -12,17 +12,22 @@ import gitLogo from "../assets/logo/git-logo.svg";
 import githubLogo from "../assets/logo/github-logo.svg";
 import nextLogo from "../assets/logo/next-logo.svg";
 import hubspotLogo from "../assets/logo/hubspot-logo.svg";
-import felixImage from "../assets/whacky-felix.png";
+import rishabhImage from "../assets/rishabh.png";
 import bluecheckImage from "../assets/projects/bluecheck-visible.png";
 import catifyImage from "../assets/projects/catify-visible.png";
 import shortlyImage from "../assets/projects/shortly-visible.png";
 import sunnysideImage from "../assets/projects/sunnyside-visible.png";
 import zerowasteImage from "../assets/projects/zerowaste-visible.png" ;
+import snaImage from "../assets/projects/sna-project.png" ;
 import aicImage from "../assets/projects/aic-visible.png";
 import errorIllustration from "../assets/illustrations/404-vector.svg";
 import successIllustration from "../assets/illustrations/success-vector.svg";
+import rishabhHey from "../assets/icons/rishabh_hey.png"
 import brandLogoLight from "../assets/icons/logo-light.png";
 import brandLogoDark from "../assets/icons/logo-dark.png";
+import sapLogo from "../assets/logo/sap-logo.svg";
+import javaLogo from "../assets/logo/java-logo.svg";
+import pythonLogo from "../assets/logo/python-logo.svg";
 
 export default {
   emailIcon,
@@ -39,7 +44,7 @@ export default {
   githubLogo,
   nextLogo,
   hubspotLogo,
-  felixImage,
+  rishabhImage,
   bluecheckImage,
   catifyImage,
   shortlyImage,
@@ -50,4 +55,9 @@ export default {
   successIllustration,
   brandLogoLight,
   brandLogoDark,
+  sapLogo,
+  javaLogo,
+  pythonLogo,
+  rishabhHey,
+  snaImage,
 };

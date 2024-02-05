@@ -5,19 +5,14 @@ import { motion } from "framer-motion";
 const socials = [
   {
     logo: images.linkedinIcon,
-    alt: "Linkedin Icon",
+    alt: "LinkedIn Icon",
     link: "https://www.linkedin.com/in/rishabh-pahwa/",
   },
   {
     logo: images.githubIcon,
-    alt: "Github Icon",
+    alt: "GitHub Icon",
     link: "https://github.com/r1shabhpahwa",
   },
-  // {
-  //   logo: images.codepenIcon,
-  //   alt: "Codepen Icon",
-  //   link: "https://codepen.io/",
-  // },
 ];
 
 const HeroSection = () => {

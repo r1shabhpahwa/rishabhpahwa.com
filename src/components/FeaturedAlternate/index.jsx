@@ -8,9 +8,9 @@ const projects = [
   {
     id: 1,
     image: images.zerowasteImage,
-    heading: "ZeroWaste",
+    heading: "DataWeaver: Enhanced Web Scraper Tool",
     description:
-      "Collaborated with a team of eight students to create and present a solution addressing common challenges in household waste management, including forgetfulness, e-waste recycling, kitchen waste disposal, automation, and mis-recycling.",
+      "DataWeaver is a sophisticated web scraping tool developed to streamline the process of data extraction from the web. Utilizing the power of Java and the jsoup library, it offers advanced HTML parsing and efficient web crawling capabilities.",
     //websiteLink: "https://shorten-app.netlify.app/",
     githubLink: "https://github.com/luv9/zero-waste",
     // techno
@@ -21,6 +21,33 @@ const projects = [
   },
   {
     id: 2,
+    image: images.zerowasteImage,
+    heading: "ZeroWaste",
+    description:
+      "Developed as a part of the course Advanced Software Engineering at Univeristy of Windsor. Collaborated with a team of four students to create and present a solution addressing common challenges in household waste management, including forgetfulness, e-waste recycling, kitchen waste disposal, automation, and mis-recycling.",
+    //websiteLink: "https://shorten-app.netlify.app/",
+    githubLink: "https://github.com/luv9/zero-waste",
+    // techno
+    html: true,
+    css: true,
+    javascript: true,
+    react: true,
+  },
+  {
+    id: 3,
+    image: images.snaImage,
+    heading: "Global ChatGPT Sentiment & Network Analysis",
+    description:
+      "<p>This project entailed a comprehensive analysis of global sentiments and social networks based on 250,000 tweets related to 'ChatGPT'. <br/>It showcases the application of advanced data science techniques to understand public perception and network dynamics on social media platforms.</p>",
+    //websiteLink: "https://sunny-page.netlify.app/",
+    githubLink: "https://github.com/r1shabhpahwa/ChatGPT-Tweets-Social-Netork-Analysis",
+    // techno
+    html: true,
+    css: true,
+    javascript: true,
+  },
+  {
+    id: 4,
     image: images.aicImage,
     heading: "Automatic Image Coloration",
     description:

@@ -26,11 +26,6 @@ const navlinks = [
     name: "Projects",
     href: "#projects",
   },
-  // {
-  //   name: "HubSpot Components",
-  //   href: null,
-  //   type: "wip", // could be "new" or "wip".
-  // },
 ];
 
 export default function NavBar() {
@@ -80,18 +75,18 @@ export default function NavBar() {
               {darkTheme ? (
                 <img
                   className="h-12 w-auto"
-                  src={images.brandLogoDark}
-                  alt="brand icon"
+                  src={images.rishabhHey}
+                  alt="Rishabh icon"
                   height={12}
-                  width={245}
+                  width={12}
                 />
               ) : (
                 <img
                   className="h-12 w-auto"
-                  src={images.brandLogoLight}
-                  alt="brand icon"
+                  src={images.rishabhHey}
+                  alt="Rishabh icon"
                   height={12}
-                  width={245}
+                  width={12}
                 />
               )}
             </a>
