@@ -15,34 +15,50 @@ const socials = [
   },
 ];
 
-const titles = ['TRAVELER', 'COFFEE CONNOISSEUR', 'LEARNER', 'GAMER', 'TECH ENTHUSIAST', 'FOODIE', 'CHESS PLAYER'];
+const titles = ['TRAVELER', 'GAMER', 'LEARNER', 'FOODIE', 'COFFEE CONNOISSEUR', 'TECH ENTHUSIAST', 'YOUTUBER', 'CHESS PLAYER',];
 
-// Custom hook for typewriter effect
-const useTypewriter = (words, delay = 1000) => {
-  const [index, setIndex] = useState(0);
-  const [subIndex, setSubIndex] = useState(0);
-  const [reverse, setReverse] = useState(false);
+const useTypewriter = (words, delay = 2000, typingSpeed = 100) => {
+  const [index, setIndex] = useState(0); // Tracks the current word index
+  const [subIndex, setSubIndex] = useState(0); // Tracks the index of the current character in the word
+  const [reverse, setReverse] = useState(false); // Flag to control the direction of typing (forward/backward)
+  const [blink, setBlink] = useState(true); // State to control the blinking of the cursor
+
+  useEffect(() => {
+    const blinkInterval = setInterval(() => {
+      setBlink((prev) => !prev);
+    }, 500); // Blink every 500ms
+
+    return () => clearInterval(blinkInterval);
+  }, []);
 
   useEffect(() => {
     if (subIndex === words[index].length + 1 && !reverse) {
+      // After reaching the end of a word, pause before starting to delete
       setTimeout(() => setReverse(true), delay);
       return;
     }
 
     if (subIndex === 0 && reverse) {
+      // After deleting a word, move to the next word and pause before starting to type
       setReverse(false);
       setIndex((prevIndex) => (prevIndex + 1) % words.length);
-      // No immediate return here; let the effect continue to increment subIndex.
+      setTimeout(() => {}, delay); // Additional delay before typing the next word can be added here if necessary
     }
+
+    // Randomize the delay to simulate more natural typing
+    const typingDelay = reverse ? 75 : Math.random() * (typingSpeed - 50) + 50;
 
     const timeout = setTimeout(() => {
       setSubIndex((prevSubIndex) => prevSubIndex + (reverse ? -1 : 1));
-    }, Math.max(reverse ? 75 : subIndex === words[index].length ? 500 : 150, parseInt(Math.random() * 350)));
+    }, typingDelay);
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse, delay, words]);
+  }, [subIndex, index, reverse, delay, words, typingSpeed]);
 
-  return words[index].substring(0, subIndex);
+  // Append the dynamic cursor to the text
+  const textWithCursor = `${words[index].substring(0, subIndex)}${blink ? ' |' : ''}`;
+
+  return textWithCursor;
 };
 
 const HeroSection = () => {
@@ -53,23 +69,25 @@ const HeroSection = () => {
       <div className="container relative">
         <div className="flex items-center flex-col">
           <div className="flex flex-col items-center justify-center min-h-[90vh] md:min-h-screen">
-            <motion.h1
-              viewport={{ once: true }}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ type: 'linear', duration: 0.5 }}
-              className="hero__heading"
-            >
-              Rishabh P.
-            </motion.h1>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.5 }}
-              className="hero__subtext"
-            >
-              BUT ALSO A {animatedTitle}
-            </motion.div>
+          <div className="container relative">
+              <motion.h1
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ type: 'linear', duration: 0.5 }}
+                className="hero__heading"
+              >
+                Rishabh P.
+              </motion.h1>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+                className="hero__subtext"
+              >
+                BUT ALSO A {animatedTitle}
+              </motion.div>
+            </div>
           </div>
         </div>
         <div className="w-full relative bottom-20 md:w-auto md:absolute md:top-[70%]">
