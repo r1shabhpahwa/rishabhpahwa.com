@@ -26,18 +26,18 @@
   }
 
   .hero__heading::before {
-    @apply text-xs text-primary-400 font-medium font-default absolute -top-6 -left-0 sm:text-base dark:text-opacity-80 dark:text-white;
+    @apply text-xs text-primary-400 font-medium font-default absolute -top-6 -left-2 sm:text-base dark:text-opacity-80 dark:text-white;
     content: "I AM";
   }
 
   .hero__heading::after {
-    @apply text-xs text-primary-400 font-medium font-default absolute -bottom-6 -right-6 sm:text-base dark:text-opacity-80 dark:text-white;
+    @apply text-xs text-primary-400 font-medium font-default absolute -bottom-6 -right-2 sm:text-base dark:text-opacity-80 dark:text-white;
     content: "A SOFTWARE DEVELOPMENT ENGINEER";
   }
 
   /* Styles for the animated title */
   .hero__subtext {
-    @apply text-xs text-primary-400 font-medium font-default  absolute -bottom-12 -left-0 sm:text-base dark:text-opacity-80 dark:text-white;
+    @apply text-xs text-primary-400 font-medium font-default  absolute -bottom-12 -left-2 sm:text-base dark:text-opacity-80 dark:text-white;
     padding-left: 1rem;
   }
 }

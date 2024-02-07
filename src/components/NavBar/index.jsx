@@ -54,8 +54,6 @@ export default function NavBar() {
     modalSetItOpen(!modalIsOpen);
   };
 
-  // TODO: make the dark mode as the default theme.
-
   return (
     <Popover
       className={` ${
