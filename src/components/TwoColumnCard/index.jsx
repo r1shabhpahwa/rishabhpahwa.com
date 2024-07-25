@@ -105,7 +105,7 @@ const TwoColumnCard = () => {
           },
         }}
         whileHover={{ scale: 1.02 }}
-        className="cursor-pointer bg-gray-50 px-6 py-16 rounded-3xl h-full filter shadow-md relative md:px-10 dark:bg-primary-500"
+        className="bg-gray-50 px-6 py-16 rounded-3xl h-full filter shadow-md relative md:px-10 dark:bg-primary-500"
       >
         <h6 className="text-2xl font-bold text-primary mb-4 dark:text-white">
           <a
