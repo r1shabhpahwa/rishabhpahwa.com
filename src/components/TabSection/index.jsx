@@ -6,18 +6,6 @@ import { ExternalLinkIcon } from "@heroicons/react/solid";
 import { motion } from "framer-motion";
 const logos = [
   {
-    image: images.sapLogo,
-    title: "SAP ABAP",
-  },
-  {
-    image: images.sapLogo,
-    title: "S/4HANA",
-  },
-  {
-    image: images.sapLogo,
-    title: "UI5 & Fiori",
-  },
-  {
     image: images.javaLogo,
     title: "Java",
   },
@@ -26,18 +14,30 @@ const logos = [
     title: "Javascript",
   },
   {
+    image: images.pythonLogo,
+    title: "Python",
+  },
+  {
+    image: images.sapLogo,
+    title: "ABAP",
+  },
+  {
     image: images.htmlLogo,
     title: "HTML5",
+  },
+  {
+    image: images.cssLogo,
+    title: "CSS",
   },
   {
     image: images.reactLogo,
     title: "React",
   },
-  
   {
-    image: images.pythonLogo,
-    title: "Python",
+    image: images.sapLogo,
+    title: "UI5",
   },
+  
   {
     image: images.hubspotLogo,
     title: "ML",
@@ -50,9 +50,10 @@ const logos = [
     image: images.gitLogo,
     title: "Git",
   },
+  
   {
-    image: images.githubLogo,
-    title: "GitHub",
+    image: images.sapLogo,
+    title: "S/4HANA",
   },
 ];
 
@@ -89,13 +90,13 @@ const TabSection = () => {
               Software Development Engineer
             </h2>
             <p className="text-base font-normal text-neutral-700 dark:text-neutral-300">
-            Seasoned software engineer with a diverse technical skill set and a passion for delivering high-quality solutions to global clients. With more than three years of experience in SAP projects. My proficiency extends to a variety of technologies, such as Java Development, Web Development, Machine Learning, and Artificial Intelligence. 
+            Software engineer with over 3 years of experience in delivering high-quality solutions to global clients. Proficient in a diverse range of technologies, including Java, JavaScript (React, Node.js with Express), and DevOps CI/CD practices. 
             <br />
             <br />
             One of my key strengths is adaptability, which enables me to thrive in Agile environments, delivering on time and to specification. I've demonstrated my ability to mentor, guide, and inspire teams, as well as to communicate effectively with a range of stakeholders. My technical knowledge is complemented by robust problem-solving abilities and a strong commitment to innovation.
             <br />
             <br/>
-            I am proud of my achievements, including the Pinnacle Award at Sopra Steria and securing the 2nd Runner Up Position in the Smart India Hackathon 2018. But I believe the journey of learning and growth is never-ending. I'm always looking for opportunities to further hone my skills and contribute to the growth of the organizations I am part of.
+            I am proud of my achievements, including the Pinnacle Award at Sopra Steria and securing the Runner-Up Position in the Smart India Hackathon 2018. But I believe the journey of learning and growth is never-ending. I'm always looking for opportunities to further hone my skills and contribute to the growth of the organizations I am part of.
             </p>
             <br />
             <h3 className="font-semibold text-xl mb-2">Certifications 📝:</h3>
@@ -126,23 +127,23 @@ const TabSection = () => {
               </li>
               <li>
                 <a
-                  //href="https://app.hubspot.com/academy/achievements/4nsfl59x/en/1/felix-macaspac/hubspot-cms-for-marketers"
-                  //className="underline"
-                  target="_blank"
-                >
-                  Core Java & Android App Development, HPE
-                </a>
-                {/* <span className="ml-1 inline-flex align-middle">
-                  <ExternalLinkIcon className="h-5 w-5" />
-                </span> */}
-              </li>
-              <li>
-                <a
-                  //href="https://app.hubspot.com/academy/achievements/4nsfl59x/en/1/felix-macaspac/hubspot-cms-for-marketers"
-                  //className="underline"
+                  href="https://ca.badgr.com/public/assertions/CLJBZQbQTpSPItiUQvjBhQ"
+                  className="underline"
                   target="_blank"
                 >
                   NextGen CTO
+                </a>
+                {<span className="ml-1 inline-flex align-middle">
+                  <ExternalLinkIcon className="h-5 w-5" />
+                </span>}
+              </li>
+              <li>
+                <a
+                  //href=""
+                  //className="underline"
+                  target="_blank"
+                >
+                  Core Java & Android App Development, Hewlett Packard Enterprise (HPE)
                 </a>
                 {/* <span className="ml-1 inline-flex align-middle">
                   <ExternalLinkIcon className="h-5 w-5" />

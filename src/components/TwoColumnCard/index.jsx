@@ -30,21 +30,34 @@ const TwoColumnCard = () => {
       >
         <h6 className="text-2xl font-bold text-primary mb-4 dark:text-white">
           <a
-            href="https://www.upwork.com/freelancers/~013e0372898b53a69e"
+            href="https://www.ericsson.com/en"
             target="_blank"
             className="hover:underline"
           >
-            Ericsson Canada Inc.
+            Ericsson
           </a>
           <span className="mt-4 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
             <CalendarIcon className=" text-neutral-600 h-4 mr-2 dark:text-neutral-300" />
-            SEPTEMBER, 2023 - PRESENT
+            SEPTEMBER, 2023 - APR, 2024
           </span>
           <span className="mt-2 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
             <BriefcaseIcon className="text-neutral-600 h-4 mr-2 dark:text-neutral-300" />
             Software Developer Co-op
           </span>
         </h6>
+        <div className="relative mb-4">
+          <div className="absolute inset-0 flex items-center" aria-hidden="true">
+            <div className="w-full border-t border-gray-300" />
+            </div>
+          <div className="relative flex justify-center">
+            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-primary-500">
+              technologies
+            </span>
+          </div>
+        </div>
+        <div className="text-base text-primary-400 dark:text-neutral-200 mb-4">
+          Java | JavaScript | React | Node.js with Express | CI/CD | JUnit
+        </div>
         <div className="relative mb-4">
           <div
             className="absolute inset-0 flex items-center"
@@ -60,14 +73,21 @@ const TwoColumnCard = () => {
         </div>
         <ul className="text-base text-primary-400 list-inside list-disc dark:text-neutral-200">
           <li>
-            Actively collaborated with the software development team in troubleshooting and resolving technical issues,
-            contributing to the enhancement of 'Mentat' – a Java-based tool for trace visualization built on Trace Compass
-            framework with a Maven build pipeline. This involved bug fixes and improving tool reliability and user experience
+            Developed a web-based network trace-sharing platform using React (front end) and Node.js with express (back end).
           </li> 
           <li>
-            Led an automation project for scraping a helpdesk forum support tickets and employing ML techniques to identify key
-            trends and sentiments. This initiative informed development strategies, boosting customer satisfaction by 25%
+            Enhanced a Java-based network trace log visualization tool by resolving critical issues, implementing key features, and optimizing the UI for better usability.
           </li>
+          <li>
+            Optimized existing algorithms, achieving a 20% increase in performance and scalability for handling large datasets.
+          </li>
+          <li>
+            Implemented unit testing frameworks, reducing post-deployment bugs by 15%.
+          </li>
+          <li>
+            Integrated CI/CD practices, using Git for version control and Gerrit for code reviews, ensuring high code quality and streamlined development workflows.
+          </li>
+
         </ul>
       </motion.div>
       <motion.div
@@ -89,7 +109,7 @@ const TwoColumnCard = () => {
       >
         <h6 className="text-2xl font-bold text-primary mb-4 dark:text-white">
           <a
-            href="https://www.hububble.co/"
+            href="https://www.soprasteria.com"
             target="_blank"
             className="hover:underline"
           >
@@ -104,6 +124,19 @@ const TwoColumnCard = () => {
             SENIOR SOFTWARE ENGINEER
           </span>
         </h6>
+        <div className="relative mb-4">
+          <div className="absolute inset-0 flex items-center" aria-hidden="true">
+            <div className="w-full border-t border-gray-300" />
+            </div>
+          <div className="relative flex justify-center">
+            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-primary-500">
+              technologies
+            </span>
+          </div>
+        </div>
+        <div className="text-base text-primary-400 dark:text-neutral-200 mb-4">
+          JavaScript | UI5 (front-end framework) | ABAP | SQL
+        </div>
         <div className="relative mb-4">
           <div
             className="absolute inset-0 flex items-center"
