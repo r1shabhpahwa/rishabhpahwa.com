@@ -6,7 +6,8 @@ import TabSection from "./components/TabSection";
 import TwoColumnCard from "./components/TwoColumnCard";
 import FeaturedAlternate from "./components/FeaturedAlternate";
 import Footer from "./components/Footer";
-import Resume from "./components/Resume"; // Create this component
+import Resume from "./components/Resume"; 
+import NotFound from "./components/NotFound"; 
 
 import "./index.css";
 import SectionWrapper from "./components/Global/SectionWrapper";
@@ -71,11 +72,9 @@ function App() {
             </div>
           }
         />
-        {/* Routes for Resume */}
-        <Route path="/lumenalta" element={<Resume />} />
-
-        {/* Wildcard Route - Redirects to / */}
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/resume" element={<Resume />} />
+        {/* Redirect all other paths to the main page */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
