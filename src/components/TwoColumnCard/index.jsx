@@ -34,11 +34,11 @@ const TwoColumnCard = () => {
             target="_blank"
             className="hover:underline"
           >
-            Ericsson
+            Ericsson Canada
           </a>
           <span className="mt-4 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
             <CalendarIcon className=" text-neutral-600 h-4 mr-2 dark:text-neutral-300" />
-            SEPTEMBER, 2023 - APR, 2024
+            SEPTEMBER, 2023 - MAY, 2024
           </span>
           <span className="mt-2 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
             <BriefcaseIcon className="text-neutral-600 h-4 mr-2 dark:text-neutral-300" />
@@ -73,19 +73,16 @@ const TwoColumnCard = () => {
         </div>
         <ul className="text-base text-primary-400 list-inside list-disc dark:text-neutral-200">
           <li>
-            Developed a web-based network trace-sharing platform using React (front end) and Node.js with express (back end).
+          Improved team efficiency by providing a centralized repository for trace sharing and collaboration, streamlining workflows for network analysis.
           </li> 
           <li>
-            Enhanced a Java-based network trace log visualization tool by resolving critical issues, implementing key features, and optimizing the UI for better usability.
+          Developed a web-based network trace-sharing platform with a React front end and Node.js/Express back end, enabling users to post, interact with, and manage network traces through features such as voting, commenting, saving, etc.
           </li>
           <li>
-            Optimized existing algorithms, achieving a 20% increase in performance and scalability for handling large datasets.
+          Played a key role in developing a Java-based network visualization tool by resolving technical issues, fixing bugs, and implementing critical features to improve reliability and enhance the user interface.
           </li>
           <li>
-            Implemented unit testing frameworks, reducing post-deployment bugs by 15%.
-          </li>
-          <li>
-            Integrated CI/CD practices, using Git for version control and Gerrit for code reviews, ensuring high code quality and streamlined development workflows.
+          Spearheaded the automation of helpdesk support ticket analysis using web scraping, NLP techniques, and data visualization, resulting in weekly reports with actionable insights for the development team, leading to increased customer satisfaction levels.
           </li>
 
         </ul>
@@ -135,7 +132,7 @@ const TwoColumnCard = () => {
           </div>
         </div>
         <div className="text-base text-primary-400 dark:text-neutral-200 mb-4">
-          JavaScript | UI5 (front-end framework) | ABAP | SQL
+          Java | JavaScript | Node.js/Express | React | Microservices | Jenkins
         </div>
         <div className="relative mb-4">
           <div
@@ -153,22 +150,19 @@ const TwoColumnCard = () => {
 
         <ul className="text-base text-primary-400 list-inside list-disc dark:text-neutral-200">
           <li>
-            Managed a critical project for Airbus for nearly 3 years as the technical owner, showcasing strong coding and
-            debugging skills in developing and maintaining an SAP WebDynpro based portal for seamless technical data
-            submission by the client's part suppliers
+          Developed a SaaS application with integrated payment processors, boosting operational efficiency and revenue potential.
           </li>
           <li>
-            Integrated OData services to facilitate efficient communication between the SAP backend and the portal, enhancing
-            data processing capabilities and user experience
+          Built and deployed microservices on Google Kubernetes Engine, leveraging Pub/Sub for event-driven architecture and GCP solutions.
           </li>
           <li>
-            Initiated and led the transition towards SAP Fiori development principles within the project, including the adoption of
-            UI5 for creating responsive design applications for an enhanced user interface
+          Streamlined deployments by implementing a Jenkins-based CI/CD pipeline with automated testing, enhancing reliability and reducing manual efforts.
           </li>
           <li>
-            Demonstrated a functional understanding of the application and technical proficiency 
-            in crucial areas such as SAP WebDynpro, OO Reports & ALV, BADI, BAPI, IDOC, Data Dictionary, 
-            SAP Performance Tuning, and SQL optimization
+          Strengthened system security by integrating Google ReCAPTCHA and implementing HMAC for data integrity.
+          </li>
+          <li>
+          Implemented secure APIs using BFF pattern, and maintained high system reliability with detailed documentation and robust incident management.
           </li>
         </ul>
       </motion.div>
