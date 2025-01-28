@@ -71,7 +71,11 @@ function App() {
             </div>
           }
         />
+        {/* Routes for Resume */}
         <Route path="/lumenalta" element={<Resume />} />
+
+        {/* Wildcard Route - Redirects to / */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
