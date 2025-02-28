@@ -56,7 +56,7 @@ const TwoColumnCard = () => {
           </div>
         </div>
         <div className="text-base text-primary-400 dark:text-neutral-200 mb-4">
-          Java | JavaScript | React | Node.js with Express | CI/CD | JUnit
+          Java | JavaScript | Node.js/Express | React | CI/CD | JUnit
         </div>
         <div className="relative mb-4">
           <div
@@ -132,7 +132,7 @@ const TwoColumnCard = () => {
           </div>
         </div>
         <div className="text-base text-primary-400 dark:text-neutral-200 mb-4">
-          Java | JavaScript | Node.js/Express | React | Microservices | Jenkins
+          Java 8+ | Spring (Boot, MVC, Cloud),  | JavaScript | Node.js/Express | Microservices | CloudNative
         </div>
         <div className="relative mb-4">
           <div
