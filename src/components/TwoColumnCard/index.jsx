@@ -26,9 +26,9 @@ const TwoColumnCard = () => {
           },
         }}
         whileHover={{ scale: 1.02 }}
-        className="bg-gray-50 px-6 py-16 rounded-3xl h-full relative filter shadow-md md:px-10 dark:bg-primary-500"
+        className="bg-gray-50 px-6 py-16 rounded-3xl h-full relative filter shadow-md md:px-10 dark:bg-dark-bg-secondary dark:border dark:border-dark-border"
       >
-        <h6 className="text-2xl font-bold text-primary mb-4 dark:text-white">
+        <h6 className="text-2xl font-bold text-primary mb-4 dark:text-dark-text-primary">
           <a
             href="https://www.ericsson.com/en"
             target="_blank"
@@ -36,12 +36,12 @@ const TwoColumnCard = () => {
           >
             Ericsson Canada
           </a>
-          <span className="mt-4 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
-            <CalendarIcon className=" text-neutral-600 h-4 mr-2 dark:text-neutral-300" />
+          <span className="mt-4 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-dark-text-secondary">
+            <CalendarIcon className=" text-neutral-600 h-4 mr-2 dark:text-dark-text-secondary" />
             SEPTEMBER, 2023 - MAY, 2024
           </span>
-          <span className="mt-2 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
-            <BriefcaseIcon className="text-neutral-600 h-4 mr-2 dark:text-neutral-300" />
+          <span className="mt-2 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-dark-text-secondary">
+            <BriefcaseIcon className="text-neutral-600 h-4 mr-2 dark:text-dark-text-secondary" />
             Software Developer Co-op
           </span>
         </h6>
@@ -50,12 +50,12 @@ const TwoColumnCard = () => {
             <div className="w-full border-t border-gray-300" />
             </div>
           <div className="relative flex justify-center">
-            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-primary-500">
+            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-dark-bg-secondary dark:text-dark-text-tertiary">
               technologies
             </span>
           </div>
         </div>
-        <div className="text-base text-primary-400 dark:text-neutral-200 mb-4">
+        <div className="text-base text-primary-400 dark:text-dark-accent-secondary mb-4">
           Java | JavaScript | Node.js/Express | React | CI/CD | JUnit
         </div>
         <div className="relative mb-4">
@@ -66,12 +66,12 @@ const TwoColumnCard = () => {
             <div className="w-full border-t border-gray-300" />
           </div>
           <div className="relative flex justify-center">
-            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-primary-500">
+            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-dark-bg-secondary dark:text-dark-text-tertiary">
               duties & responsibilities
             </span>
           </div>
         </div>
-        <ul className="text-base text-primary-400 list-inside list-disc dark:text-neutral-200">
+        <ul className="text-base text-primary-400 list-inside list-disc dark:text-dark-text-secondary">
           <li>
           Improved team efficiency by providing a centralized repository for trace sharing and collaboration, streamlining workflows for network analysis.
           </li> 
@@ -102,9 +102,9 @@ const TwoColumnCard = () => {
           },
         }}
         whileHover={{ scale: 1.02 }}
-        className="bg-gray-50 px-6 py-16 rounded-3xl h-full filter shadow-md relative md:px-10 dark:bg-primary-500"
+        className="bg-gray-50 px-6 py-16 rounded-3xl h-full filter shadow-md relative md:px-10 dark:bg-dark-bg-secondary dark:border dark:border-dark-border"
       >
-        <h6 className="text-2xl font-bold text-primary mb-4 dark:text-white">
+        <h6 className="text-2xl font-bold text-primary mb-4 dark:text-dark-text-primary">
           <a
             href="https://www.soprasteria.com"
             target="_blank"
@@ -112,12 +112,12 @@ const TwoColumnCard = () => {
           >
             Sopra Steria
           </a>
-          <span className="mt-4 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
-            <CalendarIcon className="h-4 mr-2 text-neutral-600 dark:text-neutral-300" />
+          <span className="mt-4 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-dark-text-secondary">
+            <CalendarIcon className="h-4 mr-2 text-neutral-600 dark:text-dark-text-secondary" />
             August, 2019 - August, 2022
           </span>
-          <span className="mt-2 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-neutral-300">
-            <BriefcaseIcon className="h-4 mr-2 text-neutral-600 dark:text-neutral-300" />
+          <span className="mt-2 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-dark-text-secondary">
+            <BriefcaseIcon className="h-4 mr-2 text-neutral-600 dark:text-dark-text-secondary" />
             SENIOR SOFTWARE ENGINEER
           </span>
         </h6>
@@ -126,12 +126,12 @@ const TwoColumnCard = () => {
             <div className="w-full border-t border-gray-300" />
             </div>
           <div className="relative flex justify-center">
-            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-primary-500">
+            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-dark-bg-secondary dark:text-dark-text-tertiary">
               technologies
             </span>
           </div>
         </div>
-        <div className="text-base text-primary-400 dark:text-neutral-200 mb-4">
+        <div className="text-base text-primary-400 dark:text-dark-accent-secondary mb-4">
           Java 8+ | Spring (Boot, MVC, Cloud),  | JavaScript | Node.js/Express | Microservices | CloudNative
         </div>
         <div className="relative mb-4">
@@ -142,13 +142,13 @@ const TwoColumnCard = () => {
             <div className="w-full border-t border-gray-300" />
           </div>
           <div className="relative flex justify-center">
-            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-primary-500">
+            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-dark-bg-secondary dark:text-dark-text-tertiary">
               duties & responsibilities
             </span>
           </div>
         </div>
 
-        <ul className="text-base text-primary-400 list-inside list-disc dark:text-neutral-200">
+        <ul className="text-base text-primary-400 list-inside list-disc dark:text-dark-text-secondary">
           <li>
           Developed a SaaS application with integrated payment processors, boosting operational efficiency and revenue potential.
           </li>

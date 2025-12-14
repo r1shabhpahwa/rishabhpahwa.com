@@ -65,7 +65,7 @@ const HeroSection = () => {
   const animatedTitle = useTypewriter(titles);
 
   return (
-    <section id="home" className="bg-white dark:bg-primary">
+    <section id="home" className="bg-white dark:bg-dark-bg-primary">
       <div className="container relative">
         <div className="flex items-center flex-col">
           <div className="flex flex-col items-center justify-center min-h-[90vh] md:min-h-screen">
@@ -111,11 +111,11 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1.15 }}
                 key={index}
-                className="bg-neutral w-max rounded-full hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300"
+                className="bg-neutral w-max rounded-full hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary"
               >
                 <a href={social.link} target="_blank">
                   <img
-                    className="h-14 w-14 p-4 transition-all dark:invert"
+                    className="h-14 w-14 p-4 transition-all dark:invert dark:opacity-90"
                     src={social.logo}
                     alt={social.alt}
                   />

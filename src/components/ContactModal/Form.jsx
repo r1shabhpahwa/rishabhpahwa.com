@@ -44,7 +44,7 @@ export const Form = () => {
               type="text"
               placeholder="Name"
               name="user_name"
-              className="w-full bg-neutral text-primary rounded-md py-4 px-4 transition-all text-sm border border-solid border-transparent outline-none focus:border-secondary md:text-base"
+              className="w-full bg-neutral text-primary rounded-md py-4 px-4 transition-all text-sm border border-solid border-transparent outline-none focus:border-secondary dark:bg-dark-bg-tertiary dark:text-dark-text-primary dark:placeholder-dark-text-tertiary dark:focus:border-dark-accent-primary md:text-base"
               {...register("user_name", { required: true })}
             />
             {errors.user_name && (
@@ -59,7 +59,7 @@ export const Form = () => {
               type="email"
               placeholder="Email"
               name="user_email"
-              className="w-full bg-neutral text-primary rounded-md py-4 px-4 transition-all text-sm border border-solid border-transparent outline-none focus:border-secondary md:text-base"
+              className="w-full bg-neutral text-primary rounded-md py-4 px-4 transition-all text-sm border border-solid border-transparent outline-none focus:border-secondary dark:bg-dark-bg-tertiary dark:text-dark-text-primary dark:placeholder-dark-text-tertiary dark:focus:border-dark-accent-primary md:text-base"
               {...register("user_email", { required: true })}
             />
             {errors.user_email && (
@@ -73,7 +73,7 @@ export const Form = () => {
             <textarea
               placeholder="Send me a message! I don't bite"
               name="message"
-              className="text-primary resize-none bg-neutral w-full rounded-md py-4 px-4 transition-all text-sm border border-solid border-transparent outline-none focus:border-secondary md:text-base"
+              className="text-primary resize-none bg-neutral w-full rounded-md py-4 px-4 transition-all text-sm border border-solid border-transparent outline-none focus:border-secondary dark:bg-dark-bg-tertiary dark:text-dark-text-primary dark:placeholder-dark-text-tertiary dark:focus:border-dark-accent-primary md:text-base"
               {...register("message", { required: true })}
             />
             {errors.message && (
@@ -84,7 +84,7 @@ export const Form = () => {
           </div>
           {isSubmitting ? (
             <button
-              className="flex items-center justify-center text-base font-semibold text-white bg-secondary px-10 py-3 rounded-md transition-colors hover:bg-neutral-90"
+              className="flex items-center justify-center text-base font-semibold text-white bg-secondary px-10 py-3 rounded-md transition-colors hover:bg-neutral-90 dark:bg-dark-accent-primary dark:hover:bg-dark-accent-hover"
               type="submit"
             >
               Sending
@@ -108,7 +108,7 @@ export const Form = () => {
             </button>
           ) : (
             <button
-              className="text-base font-semibold text-white bg-secondary px-10 py-3 rounded-md transition-colors hover:bg-neutral-90"
+              className="text-base font-semibold text-white bg-secondary px-10 py-3 rounded-md transition-colors hover:bg-neutral-90 dark:bg-dark-accent-primary dark:hover:bg-dark-accent-hover"
               type="submit"
             >
               Send
@@ -118,7 +118,7 @@ export const Form = () => {
       )}
       {successState && (
         <div className="px-10 py-10">
-          <h3 className="text-3xl font-semibold text-center text-white dark:text-primary">
+          <h3 className="text-3xl font-semibold text-center text-white dark:text-dark-text-primary">
             Email sent!
           </h3>
           <div className="mb-4">
@@ -132,7 +132,7 @@ export const Form = () => {
           <div className="w-full flex">
             <a
               href="/"
-              className="bg-secondary text-center font-medium uppercase px-4 py-4 rounded-lg w-full text-white"
+              className="bg-secondary text-center font-medium uppercase px-4 py-4 rounded-lg w-full text-white dark:bg-dark-accent-primary dark:hover:bg-dark-accent-hover"
             >
               GO BACK TO HOMEPAGE
             </a>
@@ -141,7 +141,7 @@ export const Form = () => {
       )}
       {errorState && (
         <div className="px-10 py-10">
-          <h3 className="text-3xl font-semibold text-center text-white dark:text-primary">
+          <h3 className="text-3xl font-semibold text-center text-white dark:text-dark-text-primary">
             Oops, Something went wrong!
           </h3>
           <div className="mb-4">
@@ -155,7 +155,7 @@ export const Form = () => {
           <div className="w-full flex">
             <a
               href="/"
-              className="bg-secondary text-center font-medium uppercase px-4 py-4 rounded-lg w-full text-primary dark:text-white"
+              className="bg-secondary text-center font-medium uppercase px-4 py-4 rounded-lg w-full text-white dark:bg-dark-accent-primary dark:hover:bg-dark-accent-hover"
             >
               GO BACK TO HOMEPAGE
             </a>

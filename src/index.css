@@ -22,28 +22,28 @@
 
 @layer components {
   .hero__heading {
-    @apply text-5xl text-primary font-display relative sm:text-6xl md:text-8xl dark:text-white;
+    @apply text-5xl text-primary font-display relative sm:text-6xl md:text-8xl dark:text-dark-text-primary;
   }
 
   .hero__heading::before {
-    @apply text-xs text-primary-400 font-medium font-default absolute -top-6 -left-2 sm:text-base dark:text-opacity-80 dark:text-white;
+    @apply text-xs text-primary-400 font-medium font-default absolute -top-6 -left-2 sm:text-base dark:text-dark-accent-secondary;
     content: "I AM";
   }
 
   .hero__heading::after {
-    @apply text-xs text-primary-400 font-medium font-default absolute -bottom-6 -right-2 sm:text-base dark:text-opacity-80 dark:text-white;
+    @apply text-xs text-primary-400 font-medium font-default absolute -bottom-6 -right-2 sm:text-base dark:text-dark-text-secondary;
     content: "A SOFTWARE DEVELOPMENT ENGINEER";
   }
 
   /* Styles for the animated title */
   .hero__subtext {
-    @apply text-xs text-primary-400 font-medium font-default  absolute -bottom-12 -left-2 sm:text-base dark:text-opacity-80 dark:text-white;
+    @apply text-xs text-primary-400 font-medium font-default  absolute -bottom-12 -left-2 sm:text-base dark:text-dark-accent-primary;
     padding-left: 1rem;
   }
 }
 
 .react-tabs__tab--selected {
-  @apply bg-secondary-400 dark:bg-secondary;
+  @apply bg-secondary-400 dark:bg-dark-accent-primary;
 }
 
 @layer components {

@@ -36,6 +36,25 @@ module.exports = {
         neutral: {
           DEFAULT: "#EEEEEE",
         },
+        // OLED-optimized dark mode colors
+        dark: {
+          bg: {
+            primary: "#000000",    // True black - Main background (OLED optimized)
+            secondary: "#0A0A0A",  // Near black - Cards/elevated surfaces
+            tertiary: "#1A1A1A",   // Dark gray - Hover states
+          },
+          text: {
+            primary: "#FFFFFF",    // Pure white - Main text
+            secondary: "#A1A1AA",  // Zinc 400 - Muted text
+            tertiary: "#71717A",   // Zinc 500 - Disabled/placeholder
+          },
+          accent: {
+            primary: "#A78BFA",    // Vibrant purple (lighter for contrast on black)
+            secondary: "#C4B5FD",  // Light purple
+            hover: "#8B5CF6",      // Deeper purple for hover
+          },
+          border: "#27272A",       // Zinc 800 - Subtle borders
+        },
       },
     },
     container: {

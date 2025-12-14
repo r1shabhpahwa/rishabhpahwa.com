@@ -94,7 +94,7 @@ export default function NavBar() {
             </a>
           </div>
           <div className="-mr-2 -my-2 lg:hidden">
-            <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary dark:text-white">
+            <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary dark:text-dark-text-primary dark:focus:ring-dark-accent-primary">
               <span className="sr-only">Open menu</span>
               <MenuAlt1Icon
                 className="h-6 w-6 transform rotate-180"
@@ -112,8 +112,8 @@ export default function NavBar() {
                 href={navlink.href}
                 className={
                   navlink.href
-                    ? "text-base font-medium text-primary relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:scale-x-0 before:transition before:bg-primary hover:before:scale-x-100 dark:hover:text-neutral dark:text-white dark:before:bg-secondary-400"
-                    : "text-base font-medium text-primary relative dark:text-white dark:before:bg-secondary-400 cursor-not-allowed"
+                    ? "text-base font-medium text-primary relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:scale-x-0 before:transition before:bg-primary hover:before:scale-x-100 dark:text-dark-text-primary dark:hover:text-dark-accent-secondary dark:before:bg-dark-accent-primary"
+                    : "text-base font-medium text-primary relative dark:text-dark-text-secondary dark:before:bg-dark-accent-primary cursor-not-allowed"
                 }
               >
                 {navlink.name}
@@ -151,7 +151,7 @@ export default function NavBar() {
               },
             }}
             whileTap={{ y: -5 }}
-            className="text-primary hidden transition-opacity lg:block dark:text-white"
+            className="text-primary hidden transition-opacity lg:block dark:text-dark-accent-primary hover:dark:text-dark-accent-hover"
             onClick={handleMode}
           >
             {darkTheme ? (
@@ -175,7 +175,7 @@ export default function NavBar() {
             focus
             className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden"
           >
-            <div className="rounded-lg shadow-lg filter drop-shadow-lg bg-primary-700">
+            <div className="rounded-lg shadow-lg filter drop-shadow-lg bg-primary-700 dark:bg-dark-bg-secondary dark:border dark:border-dark-border">
               <div className="pt-5 pb-6 px-5">
                 <div className="flex items-center justify-between">
                   <motion.div
@@ -194,17 +194,17 @@ export default function NavBar() {
                       },
                     }}
                     whileTap={{ y: -5 }}
-                    className="text-primary transition-opacity block dark:text-white"
+                    className="text-primary transition-opacity block dark:text-dark-accent-primary hover:dark:text-dark-accent-hover"
                     onClick={handleMode}
                   >
                     {darkTheme ? (
-                      <SunIcon className="h-6 w-6 cursor-pointer opacity-100 text-white" />
+                      <SunIcon className="h-6 w-6 cursor-pointer opacity-100 dark:text-dark-accent-primary" />
                     ) : (
                       <MoonIcon className="h-6 w-6 cursor-pointer opacity-100 text-white" />
                     )}
                   </motion.div>
                   <div className="-mr-2">
-                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-white hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">
+                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-white hover:bg-primary-400 dark:hover:bg-dark-bg-tertiary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary dark:focus:ring-dark-accent-primary">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -216,7 +216,7 @@ export default function NavBar() {
                       <a
                         key={navlink.name}
                         href={navlink.href}
-                        className="text-base font-medium text-white w-max relative"
+                        className="text-base font-medium text-white dark:text-dark-text-primary dark:hover:text-dark-accent-secondary w-max relative"
                       >
                         {navlink.name}
                         {navlink.type === "new" && (

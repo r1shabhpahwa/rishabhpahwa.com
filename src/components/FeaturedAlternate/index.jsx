@@ -65,11 +65,11 @@ const CardGrid = () => {
               0{proj.id}
             </span>
             <div className="w-full z-10 md:w-1/2">
-              <h3 className="text-primary text-4xl font-semibold mb-4 dark:text-white">
+              <h3 className="text-primary text-4xl font-semibold mb-4 dark:text-dark-text-primary">
                 {proj.heading}
               </h3>
               <RichText
-                className="text-primary-400 text-base dark:text-neutral-300"
+                className="text-primary-400 text-base dark:text-dark-text-secondary"
                 content={proj.description}
               />
               <div className="flex flex-row relative">
@@ -80,8 +80,8 @@ const CardGrid = () => {
                       href={proj.websiteLink}
                       target="_blank"
                     >
-                      <span className="absolute inset-0 border border-secondary group-active:border-secondary"></span>
-                      <span className="flex items-center gap-3 px-4 py-3 transition-transform bg-secondary border border-secondary active:border-secondary active:bg-secondary group-hover:-translate-x-1 group-hover:-translate-y-1">
+                      <span className="absolute inset-0 border border-secondary dark:border-dark-accent-primary group-active:border-secondary dark:group-active:border-dark-accent-primary"></span>
+                      <span className="flex items-center gap-3 px-4 py-3 transition-transform bg-secondary dark:bg-dark-accent-primary border border-secondary dark:border-dark-accent-primary active:border-secondary active:bg-secondary dark:active:bg-dark-accent-hover group-hover:-translate-x-1 group-hover:-translate-y-1">
                         <GlobeAltIcon className="w-6 h-6" />
                         Website
                       </span>
@@ -89,7 +89,7 @@ const CardGrid = () => {
                   )}
                   {proj.githubLink && (
                     <a
-                      className="relative inline-block text-sm font-medium text-secondary dark:text-secondary-50 active:text-secondary group focus:outline-none focus:ring"
+                      className="relative inline-block text-sm font-medium text-secondary dark:text-dark-accent-primary active:text-secondary group focus:outline-none focus:ring"
                       href={proj.githubLink}
                       target="_blank"
                     >
@@ -98,7 +98,7 @@ const CardGrid = () => {
                         <svg
                           viewBox="0 0 20 20"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-6 h-6 text-secondary dark:text-secondary-50 fill-current"
+                          className="w-6 h-6 text-secondary dark:text-dark-accent-primary fill-current"
                         >
                           <path
                             d="M10.2397 0.517241C4.86796 0.517241 0.51709 4.86811 0.51709 10.2399C0.51709 14.5421 3.30019 18.1759 7.16493 19.4642C7.65106 19.5493 7.83336 19.2576 7.83336 19.0024C7.83336 18.7714 7.8212 18.0058 7.8212 17.1915C5.3784 17.6412 4.74643 16.596 4.55197 16.0491C4.4426 15.7696 3.96862 14.9067 3.55541 14.6758C3.21512 14.4935 2.72898 14.0438 3.54325 14.0317C4.30891 14.0195 4.85581 14.7366 5.03811 15.0282C5.91314 16.4988 7.31077 16.0856 7.86982 15.8304C7.95489 15.1984 8.21011 14.773 8.48963 14.53C6.32635 14.2869 4.06584 13.4483 4.06584 9.72942C4.06584 8.67208 4.4426 7.79705 5.06241 7.11647C4.96519 6.8734 4.62489 5.87683 5.15964 4.53997C5.15964 4.53997 5.97391 4.28475 7.83336 5.53654C8.61117 5.31778 9.43759 5.2084 10.264 5.2084C11.0904 5.2084 11.9169 5.31778 12.6947 5.53654C14.5541 4.2726 15.3684 4.53997 15.3684 4.53997C15.9031 5.87683 15.5628 6.8734 15.4656 7.11647C16.0854 7.79705 16.4622 8.65993 16.4622 9.72942C16.4622 13.4605 14.1895 14.2869 12.0262 14.53C12.3787 14.8338 12.6825 15.4171 12.6825 16.3286C12.6825 17.629 12.6704 18.6742 12.6704 19.0024C12.6704 19.2576 12.8527 19.5614 13.3388 19.4642C15.2689 18.8125 16.946 17.5721 18.1342 15.9173C19.3224 14.2626 19.9617 12.277 19.9623 10.2399C19.9623 4.86811 15.6114 0.517241 10.2397 0.517241Z"
@@ -119,14 +119,14 @@ const CardGrid = () => {
                   <div className="w-full border-t border-gray-300" />
                 </div>
                 <div className="relative flex justify-center">
-                  <span className="uppercase px-2 bg-white text-sm text-gray-500 dark:bg-primary">
+                  <span className="uppercase px-2 bg-white text-sm text-gray-500 dark:bg-dark-bg-primary dark:text-dark-text-tertiary">
                     TECHNOLOGIES USED
                   </span>
                 </div>
               </div>
               <div className="flex flex-wrap items-center gap-4 py-6">
                 {proj.html && (
-                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300">
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
                     <img
                       className="h-8 object-contain dark:filter dark:invert"
                       src={images.htmlLogo}
@@ -137,7 +137,7 @@ const CardGrid = () => {
                   </div>
                 )}
                 {proj.css && (
-                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300">
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
                     <img
                       className="h-8 object-contain dark:filter dark:invert"
                       src={images.cssLogo}
@@ -148,7 +148,7 @@ const CardGrid = () => {
                   </div>
                 )}
                 {proj.javascript && (
-                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300">
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
                     <img
                       className="h-8 object-contain dark:filter dark:invert"
                       src={images.javascriptLogo}
@@ -159,7 +159,7 @@ const CardGrid = () => {
                   </div>
                 )}
                 {proj.react && (
-                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300">
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
                     <img
                       className="h-8 object-contain dark:filter dark:invert"
                       src={images.reactLogo}
@@ -170,7 +170,7 @@ const CardGrid = () => {
                   </div>
                 )}
                 {proj.next && (
-                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300">
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
                     <img
                       className="h-8 object-contain dark:filter dark:invert"
                       src={images.htmlLogo}
@@ -181,7 +181,7 @@ const CardGrid = () => {
                   </div>
                 )}
                 {proj.hubspot && (
-                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300">
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
                     <img
                       className="h-8 object-contain dark:filter dark:invert"
                       src={images.hubspotLogo}
@@ -192,7 +192,7 @@ const CardGrid = () => {
                   </div>
                 )}
                 {proj.tailwind && (
-                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300">
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
                     <img
                       className="h-8 object-contain dark:filter dark:invert"
                       src={images.tailwindLogo}
@@ -206,7 +206,7 @@ const CardGrid = () => {
             </div>
             <div className="w-full z-10 relative md:w-1/2">
               {!isLoaded && (
-                <div className="absolute bg-primary-400 animate-pulse w-full rounded-lg filter shadow-lg object-cover h-[340px]" />
+                <div className="absolute bg-primary-400 dark:bg-dark-bg-secondary animate-pulse w-full rounded-lg filter shadow-lg object-cover h-[340px]" />
               )}
               <img
                 className="w-full rounded-lg filter shadow-lg object-contain h-auto"
