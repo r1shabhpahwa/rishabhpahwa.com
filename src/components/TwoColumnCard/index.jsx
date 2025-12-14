@@ -8,8 +8,78 @@ const TwoColumnCard = () => {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true }}
-      className="grid grid-cols-1 gap-10 items-center md:grid-cols-2"
+      className="grid grid-cols-1 gap-10 items-start md:grid-cols-2 lg:grid-cols-3"
     >
+      <motion.div
+        variants={{
+          offscreen: {
+            y: 150,
+          },
+          onscreen: {
+            y: 0,
+            transition: {
+              type: "spring",
+              bounce: 0.4,
+              duration: 1,
+            },
+          },
+        }}
+        whileHover={{ scale: 1.02 }}
+        className="bg-gray-50 px-6 py-16 rounded-3xl h-full filter shadow-md relative md:px-10 dark:bg-dark-bg-secondary dark:border dark:border-dark-border"
+      >
+        <h6 className="text-2xl font-bold text-primary mb-4 dark:text-dark-text-primary">
+          <a
+            href="https://www.uniserve.com"
+            target="_blank"
+            className="hover:underline"
+          >
+            Uniserve Communications
+          </a>
+          <span className="mt-4 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-dark-text-secondary">
+            <CalendarIcon className="h-4 mr-2 text-neutral-600 dark:text-dark-text-secondary" />
+            APRIL, 2025 - PRESENT
+          </span>
+          <span className="mt-2 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-dark-text-secondary">
+            <BriefcaseIcon className="h-4 mr-2 text-neutral-600 dark:text-dark-text-secondary" />
+            SOFTWARE DEVELOPER
+          </span>
+        </h6>
+        <div className="relative mb-4">
+          <div className="absolute inset-0 flex items-center" aria-hidden="true">
+            <div className="w-full border-t border-gray-300" />
+            </div>
+          <div className="relative flex justify-center">
+            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-dark-bg-secondary dark:text-dark-text-tertiary">
+              technologies
+            </span>
+          </div>
+        </div>
+        <div className="text-base text-primary-400 dark:text-dark-accent-secondary mb-4">
+          Next.js | React | TypeScript | Node.js | Express | PostgreSQL | Prisma | Docker | GitLab CI/CD
+        </div>
+        <div className="relative mb-4">
+          <div
+            className="absolute inset-0 flex items-center"
+            aria-hidden="true"
+          >
+            <div className="w-full border-t border-gray-300" />
+          </div>
+          <div className="relative flex justify-center">
+            <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-dark-bg-secondary dark:text-dark-text-tertiary">
+              duties & responsibilities
+            </span>
+          </div>
+        </div>
+
+        <ul className="text-base text-primary-400 list-disc pl-5 space-y-2 dark:text-dark-text-secondary">
+          <li>Working on architecting a multi-tenant managed services platform with session-based authentication, MFA (TOTP), OAuth2, and granular RBAC for MSP operations.</li>
+          <li>Developing fax management module with Telnyx API integration, multi-layered webhook security, and tenant-isolated media storage.</li>
+          <li>Building full-stack solution with responsive Next.js frontend and Node.js/Express backend APIs, implementing CSRF protection, retry logic, and typed error handling.</li>
+          <li>Implementing secure authentication system with AES-GCM encrypted MFA secrets, rotating session tokens, and rate-limited endpoints.</li>
+          <li>Integrating with ConnectWise CRM for support ticket synchronization and workflow automation across platforms.</li>
+          <li>Establishing code quality standards with ESLint 9, pre-commit hooks, and clean modular architecture with TanStack Query for server-state caching.</li>
+        </ul>
+      </motion.div>
       <motion.div
         variants={{
           offscreen: {
@@ -115,7 +185,7 @@ const TwoColumnCard = () => {
         <div className="relative mb-4">
           <div className="absolute inset-0 flex items-center" aria-hidden="true">
             <div className="w-full border-t border-gray-300" />
-            </div>
+          </div>
           <div className="relative flex justify-center">
             <span className="uppercase px-2 bg-gray-50 text-sm text-gray-500 dark:bg-dark-bg-secondary dark:text-dark-text-tertiary">
               technologies
@@ -148,7 +218,7 @@ const TwoColumnCard = () => {
           <li>Authored technical documentation on system architecture, API specifications, and troubleshooting guides while mentoring junior engineers through code reviews and onboarding support.</li>
         </ul>
       </motion.div>
-      
+
     </motion.div>
   );
 };
