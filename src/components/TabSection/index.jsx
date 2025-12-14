@@ -84,73 +84,26 @@ const TabSection = () => {
             transition={{ type: "linear", duration: 0.5 }}
             className="w-full text-primary md:w-1/2 dark:text-dark-text-primary"
           >
-            <h2 className="text-2xl font-semibold mb-2 dark:text-dark-text-primary">
-              Software Developer
-            </h2>
-            <p className="text-base font-normal text-neutral-700 dark:text-dark-text-secondary">
-            Full-stack software developer with 4+ years of experience building scalable web applications and cloud-native solutions. Graduate from University of Windsor with a Master's in Applied Computing, combining strong academic foundation with hands-on industry experience.
-            <br />
-            <br />
-            Specialized in modern full-stack development with expertise in React, Next.js, Node.js, Spring Boot, and cloud platforms (AWS, GCP, Azure). Strong background in microservices architecture, RESTful APIs, authentication systems (OAuth2, MFA), and CI/CD automation using Docker and Kubernetes.
-            <br />
-            <br/>
-            Beyond professional work, I'm deeply passionate about open-source software and self-hosting. I run a comprehensive homelab built on TrueNAS Scale, hosting 14+ self-hosted services including media servers, cloud storage, VPN infrastructure, and container orchestration - all accessible through secure reverse proxy configurations. This hands-on experience with infrastructure management and DevOps practices complements my development skills and keeps me engaged with emerging technologies.
-            <br />
-            <br/>
-            Proven track record of delivering production-ready features from design to deployment, with emphasis on clean code, security best practices, and performance optimization. Always eager to learn, experiment, and contribute to the open-source community.
-            </p>
-            <br />
-            <h3 className="font-semibold text-xl mb-2 dark:text-dark-text-primary">Certifications 📝:</h3>
-            <ul className="list-inside list-disc text-neutral-700 dark:text-dark-text-secondary">
-              <li>
-                <a
-                  href="https://www.linkedin.com/learning/certificates/b171b5ea06edc9862339a492cb0e801611a42696b2b5622ffde03649254e9a7a?u=56973065"
-                  className="underline"
-                  target="_blank"
-                >
-                  Scrum: Advanced
-                  <span className="ml-1 inline-flex align-middle">
-                    <ExternalLinkIcon className="h-5 w-5" />
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/learning/certificates/e0f7392996dcf0cb51ab8603f3b73d399d46f93c1db29c18af0e3ecdd6e9a995?u=56973065"
-                  className="underline"
-                  target="_blank"
-                >
-                  MongoDB
-                </a>
-                <span className="ml-1 inline-flex align-middle">
-                  <ExternalLinkIcon className="h-5 w-5" />
-                </span>
-              </li>
-              <li>
-                <a
-                  href="https://ca.badgr.com/public/assertions/CLJBZQbQTpSPItiUQvjBhQ"
-                  className="underline"
-                  target="_blank"
-                >
-                  NextGen CTO
-                </a>
-                {<span className="ml-1 inline-flex align-middle">
-                  <ExternalLinkIcon className="h-5 w-5" />
-                </span>}
-              </li>
-              <li>
-                <a
-                  //href=""
-                  //className="underline"
-                  target="_blank"
-                >
-                  Core Java & Android App Development, Hewlett Packard Enterprise (HPE)
-                </a>
-                {/* <span className="ml-1 inline-flex align-middle">
-                  <ExternalLinkIcon className="h-5 w-5" />
-                </span> */}
-              </li>
-            </ul>
+            <div className="space-y-4">
+              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+                I'm a software engineer who loves <span className="font-semibold text-primary dark:text-dark-text-primary">the command line just as much as the frontend</span>. With a Master's from the University of Windsor and <span className="font-semibold text-primary dark:text-dark-text-primary">4+ years building scalable applications</span>, I bridge the gap between <span className="italic">"it works on my machine"</span> and <span className="italic">"it works for thousands of users."</span>
+              </p>
+              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+                For me, software engineering is fundamentally about <span className="font-semibold text-primary dark:text-dark-text-primary">turning complex requirements into reliable, usable solutions</span>. I've developed expertise as a <span className="font-semibold text-primary dark:text-dark-text-primary">full-stack generalist</span>, comfortable across the entire stack—from fine-tuning frontend performance with <span className="font-medium">Next.js and React</span>, to designing secure, scalable backend microservices using <span className="font-medium">Node.js and Spring Boot</span>. I have solid experience tackling challenges like implementing robust authentication (<span className="font-medium">OAuth2, MFA</span>), migrating older systems to cleaner architectures, and ensuring effective deployment to the cloud.
+              </p>
+              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+                But if you really want to know what makes me tick, you have to look at <span className="font-semibold text-primary dark:text-dark-text-primary">what I do when the laptop closes</span>. I am a massive proponent of <span className="font-semibold text-primary dark:text-dark-text-primary">self-hosting and digital sovereignty</span>. I don't just use the cloud; <span className="italic">I built my own at home</span>.
+              </p>
+              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+                I run a comprehensive homelab on <span className="font-medium">TrueNAS Scale</span> that currently powers <span className="font-semibold text-primary dark:text-dark-text-primary">over 14 services</span>. It started as a way to store photos, but it evolved into a playground where I act as the <span className="font-medium">Lead Developer, SysAdmin, and DevOps Engineer</span> all at once.
+              </p>
+              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+                From configuring <span className="font-medium">secure reverse proxies</span> to ensure my Nextcloud instance is accessible (but safe) from a coffee shop, to orchestrating media streaming via <span className="font-medium">Jellyfin</span> for my friends, this hobby keeps me sharp. It forces me to understand <span className="font-semibold text-primary dark:text-dark-text-primary">networking, Docker containerization, and Linux security</span> at a level that most developers rarely touch.
+              </p>
+              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+                At the end of the day, <span className="font-semibold text-primary dark:text-dark-text-primary">I'm a builder</span>. Whether I'm optimizing a database query, automating a CI/CD pipeline, or orchestrating a new containerized service, I love the process of <span className="italic">turning complexity into something reliable and efficient</span>.
+              </p>
+            </div>
           </motion.div>
 
           <motion.div

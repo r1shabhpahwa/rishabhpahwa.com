@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import images from '../../constants/image';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const socials = [
   {
@@ -13,109 +13,112 @@ const socials = [
     alt: 'GitHub Icon',
     link: 'https://github.com/r1shabhpahwa',
   },
+  {
+    logo: images.steamIcon,
+    alt: 'Steam Icon',
+    link: 'https://steamcommunity.com/id/p1xeleh',
+  },
+  {
+    logo: images.youtubeIcon,
+    alt: 'YouTube Icon',
+    link: 'https://www.youtube.com/@CETech4u',
+  },
 ];
 
-const titles = ['TRAVELER', 'GAMER', 'LEARNER', 'FOODIE', 'COFFEE CONNOISSEUR', 'TECH ENTHUSIAST', 'YOUTUBER', 'CHESS PLAYER',];
-
-const useTypewriter = (words, delay = 2000, typingSpeed = 100) => {
-  const [index, setIndex] = useState(0); // Tracks the current word index
-  const [subIndex, setSubIndex] = useState(0); // Tracks the index of the current character in the word
-  const [reverse, setReverse] = useState(false); // Flag to control the direction of typing (forward/backward)
-  const [blink, setBlink] = useState(true); // State to control the blinking of the cursor
-
-  useEffect(() => {
-    const blinkInterval = setInterval(() => {
-      setBlink((prev) => !prev);
-    }, 500); // Blink every 500ms
-
-    return () => clearInterval(blinkInterval);
-  }, []);
-
-  useEffect(() => {
-    if (subIndex === words[index].length + 1 && !reverse) {
-      // After reaching the end of a word, pause before starting to delete
-      setTimeout(() => setReverse(true), delay);
-      return;
-    }
-
-    if (subIndex === 0 && reverse) {
-      // After deleting a word, move to the next word and pause before starting to type
-      setReverse(false);
-      setIndex((prevIndex) => (prevIndex + 1) % words.length);
-      setTimeout(() => {}, delay); // Additional delay before typing the next word can be added here if necessary
-    }
-
-    // Randomize the delay to simulate more natural typing
-    const typingDelay = reverse ? 75 : Math.random() * (typingSpeed - 50) + 50;
-
-    const timeout = setTimeout(() => {
-      setSubIndex((prevSubIndex) => prevSubIndex + (reverse ? -1 : 1));
-    }, typingDelay);
-
-    return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse, delay, words, typingSpeed]);
-
-  // Append the dynamic cursor to the text
-  const textWithCursor = `${words[index].substring(0, subIndex)}${blink ? ' |' : ''}`;
-
-  return textWithCursor;
-};
+const greetings = ['hi', 'hola', 'bonjour', 'ciao', 'नमस्ते', 'こんにちは', '안녕', 'hallo', 'olá'];
 
 const HeroSection = () => {
-  const animatedTitle = useTypewriter(titles);
+  const [currentGreeting, setCurrentGreeting] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentGreeting((prev) => (prev + 1) % greetings.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section id="home" className="bg-white dark:bg-dark-bg-primary">
       <div className="container relative">
-        <div className="flex items-center flex-col">
-          <div className="flex flex-col items-center justify-center min-h-[90vh] md:min-h-screen">
-          <div className="container relative">
-              <motion.h1
-                viewport={{ once: true }}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ type: 'linear', duration: 0.5 }}
-                className="hero__heading"
-              >
-                Rishabh P.
-              </motion.h1>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-                className="hero__subtext"
-              >
-                BUT ALSO A {animatedTitle}
-              </motion.div>
-            </div>
+        <div className="flex items-center justify-center min-h-screen">
+          <div className="max-w-4xl mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              className="space-y-8"
+            >
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-hero font-light text-primary dark:text-dark-text-primary leading-relaxed">
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={currentGreeting}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.3 }}
+                    className="inline-block"
+                  >
+                    {greetings[currentGreeting]}
+                  </motion.span>
+                </AnimatePresence>
+                .<br />
+                i'm<br />
+                rishabh.
+              </h1>
+
+              <p className="text-lg sm:text-xl md:text-2xl text-primary-400 dark:text-dark-text-secondary font-hero font-light leading-relaxed max-w-2xl">
+                Building robust software from the database up to the pixel. I specialize in full-stack architecture, open-source infrastructure, and making complex systems feel simple.
+              </p>
+
+              <div className="flex flex-wrap gap-4 pt-4">
+                <motion.a
+                  href="#about"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.6, duration: 0.4 }}
+                  className="relative inline-block text-sm font-hero font-normal text-primary dark:text-dark-text-primary group focus:outline-none focus:ring"
+                >
+                  <span className="absolute inset-0 border border-current"></span>
+                  <span className="block px-6 py-3 transition-transform bg-transparent border border-current group-hover:-translate-x-1 group-hover:-translate-y-1">
+                    about me
+                  </span>
+                </motion.a>
+                <motion.a
+                  href="#projects"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.7, duration: 0.4 }}
+                  className="relative inline-block text-sm font-hero font-normal text-white dark:text-dark-bg-primary group focus:outline-none focus:ring"
+                >
+                  <span className="absolute inset-0 border border-primary dark:border-dark-text-primary"></span>
+                  <span className="relative block px-6 py-3 transition-transform bg-primary dark:bg-dark-text-primary border border-primary dark:border-dark-text-primary group-hover:-translate-x-1 group-hover:-translate-y-1">
+                    view my work
+                  </span>
+                </motion.a>
+              </div>
+            </motion.div>
           </div>
         </div>
-        <div className="w-full relative bottom-20 md:w-auto md:absolute md:top-[70%]">
-          <ul className="flex flex-row justify-center items-center w-full gap-6 md:flex-col">
+
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 md:left-8 md:bottom-8 md:transform-none">
+          <ul className="flex flex-row gap-4 md:flex-col">
             {socials.map((social, index) => (
               <motion.li
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  default: {
-                    duration: 0.3,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  },
-                  scale: {
-                    type: 'spring',
-                    damping: 5,
-                    stiffness: 100,
-                    restDelta: 0.001,
-                  },
-                }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1.15 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 + index * 0.1, duration: 0.4 }}
                 key={index}
-                className="bg-neutral w-max rounded-full hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary"
+                className="group"
               >
-                <a href={social.link} target="_blank">
+                <a
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block p-3 rounded-full hover:bg-neutral-200 dark:hover:bg-dark-bg-secondary transition-colors"
+                >
                   <img
-                    className="h-14 w-14 p-4 transition-all dark:invert dark:opacity-90"
+                    className="h-6 w-6 opacity-60 group-hover:opacity-100 transition-opacity dark:invert"
                     src={social.logo}
                     alt={social.alt}
                   />

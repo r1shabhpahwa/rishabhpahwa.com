@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       default: ["Poppins", "sans-serif"],
       display: ["Krona One", "sans-serif"],
+      hero: ["IBM Plex Mono", "monospace"],
     },
     extend: {
       colors: {
