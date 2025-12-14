@@ -11,24 +11,27 @@ import tailwindLogo from "../assets/logo/tailwind-logo.svg";
 import gitLogo from "../assets/logo/git-logo.svg";
 import githubLogo from "../assets/logo/github-logo.svg";
 import nextLogo from "../assets/logo/next-logo.svg";
-import hubspotLogo from "../assets/logo/hubspot-logo.svg";
 import rishabhImage from "../assets/rishabh.png";
-import bluecheckImage from "../assets/projects/bluecheck-visible.png";
-import catifyImage from "../assets/projects/catify-visible.png";
-import shortlyImage from "../assets/projects/shortly-visible.png";
-import sunnysideImage from "../assets/projects/sunnyside-visible.png";
-import zerowasteImage from "../assets/projects/zerowaste-visible.png" ;
-import eAcademyImage from "../assets/projects/eAcademy-project.png" ;
-import snaImage from "../assets/projects/sna-project.png" ;
-import aicImage from "../assets/projects/aic-visible.png";
+import homelabImage from "../assets/projects/homelab-project.png";
+import eAcademyImage from "../assets/projects/eAcademy-project.png";
+import snaImage from "../assets/projects/sna-project.png";
 import errorIllustration from "../assets/illustrations/404-vector.svg";
 import successIllustration from "../assets/illustrations/success-vector.svg";
 import rishabhHey from "../assets/icons/rishabh_hey.png"
 import brandLogoLight from "../assets/icons/logo-light.png";
 import brandLogoDark from "../assets/icons/logo-dark.png";
-import sapLogo from "../assets/logo/sap-logo.svg";
 import javaLogo from "../assets/logo/java-logo.svg";
 import pythonLogo from "../assets/logo/python-logo.svg";
+import dockerLogo from "../assets/logo/docker-logo.svg";
+import kubernetesLogo from "../assets/logo/kubernetes-logo.svg";
+import linuxLogo from "../assets/logo/linux-logo.svg";
+import nginxLogo from "../assets/logo/nginx-logo.svg";
+import typescriptLogo from "../assets/logo/typescript-logo.svg";
+import nodejsLogo from "../assets/logo/nodejs-logo.svg";
+import postgresqlLogo from "../assets/logo/postgresql-logo.svg";
+import awsLogo from "../assets/logo/aws-logo.svg";
+import djangoLogo from "../assets/logo/django-logo.svg";
+import jupyterLogo from "../assets/logo/jupyter-logo.svg";
 
 export default {
   emailIcon,
@@ -44,22 +47,25 @@ export default {
   gitLogo,
   githubLogo,
   nextLogo,
-  hubspotLogo,
   rishabhImage,
-  bluecheckImage,
-  catifyImage,
-  shortlyImage,
-  sunnysideImage,
-  zerowasteImage,
-  aicImage,
+  homelabImage,
+  eAcademyImage,
+  snaImage,
   errorIllustration,
   successIllustration,
   brandLogoLight,
   brandLogoDark,
-  sapLogo,
   javaLogo,
   pythonLogo,
-  rishabhHey,
-  snaImage,
-  eAcademyImage
+  dockerLogo,
+  kubernetesLogo,
+  linuxLogo,
+  nginxLogo,
+  typescriptLogo,
+  nodejsLogo,
+  postgresqlLogo,
+  awsLogo,
+  djangoLogo,
+  jupyterLogo,
+  rishabhHey
 };

@@ -10,50 +10,48 @@ const logos = [
     title: "Java",
   },
   {
-    image: images.javascriptLogo,
-    title: "Javascript",
+    image: images.typescriptLogo,
+    title: "TypeScript",
   },
   {
     image: images.pythonLogo,
     title: "Python",
   },
   {
-    image: images.sapLogo,
-    title: "ABAP",
-  },
-  {
-    image: images.htmlLogo,
-    title: "HTML5",
-  },
-  {
-    image: images.cssLogo,
-    title: "CSS",
-  },
-  {
     image: images.reactLogo,
     title: "React",
   },
   {
-    image: images.sapLogo,
-    title: "UI5",
-  },
-  
-  {
-    image: images.hubspotLogo,
-    title: "ML",
+    image: images.nextLogo,
+    title: "Next.js",
   },
   {
-    image: images.tailwindLogo,
-    title: "Data Analysis",
+    image: images.nodejsLogo,
+    title: "Node.js",
+  },
+  {
+    image: images.postgresqlLogo,
+    title: "PostgreSQL",
+  },
+  {
+    image: images.dockerLogo,
+    title: "Docker",
+  },
+  {
+    image: images.kubernetesLogo,
+    title: "Kubernetes",
+  },
+  {
+    image: images.awsLogo,
+    title: "AWS",
+  },
+  {
+    image: images.githubLogo,
+    title: "CI/CD",
   },
   {
     image: images.gitLogo,
     title: "Git",
-  },
-  
-  {
-    image: images.sapLogo,
-    title: "S/4HANA",
   },
 ];
 
@@ -87,16 +85,19 @@ const TabSection = () => {
             className="w-full text-primary md:w-1/2 dark:text-dark-text-primary"
           >
             <h2 className="text-2xl font-semibold mb-2 dark:text-dark-text-primary">
-              Software Development Engineer
+              Software Developer
             </h2>
             <p className="text-base font-normal text-neutral-700 dark:text-dark-text-secondary">
-            Software engineer with over 3 years of experience in delivering high-quality solutions to global clients. Proficient in a diverse range of technologies, including Java, JavaScript (React, Node.js with Express), and DevOps CI/CD practices. 
+            Full-stack software developer with 6+ years of experience building scalable web applications and cloud-native solutions. Graduate from University of Windsor with a Master's in Applied Computing, combining strong academic foundation with hands-on industry experience.
             <br />
             <br />
-            One of my key strengths is adaptability, which enables me to thrive in Agile environments, delivering on time and to specification. I've demonstrated my ability to mentor, guide, and inspire teams, as well as to communicate effectively with a range of stakeholders. My technical knowledge is complemented by robust problem-solving abilities and a strong commitment to innovation.
+            Specialized in modern full-stack development with expertise in React, Next.js, Node.js, Spring Boot, and cloud platforms (AWS, GCP, Azure). Strong background in microservices architecture, RESTful APIs, authentication systems (OAuth2, MFA), and CI/CD automation using Docker and Kubernetes.
             <br />
             <br/>
-            I am proud of my achievements, including the Pinnacle Award at Sopra Steria and securing the Runner-Up Position in the Smart India Hackathon 2018. But I believe the journey of learning and growth is never-ending. I'm always looking for opportunities to further hone my skills and contribute to the growth of the organizations I am part of.
+            Beyond professional work, I'm deeply passionate about open-source software and self-hosting. I run a comprehensive homelab built on TrueNAS Scale, hosting 14+ self-hosted services including media servers, cloud storage, VPN infrastructure, and container orchestration - all accessible through secure reverse proxy configurations. This hands-on experience with infrastructure management and DevOps practices complements my development skills and keeps me engaged with emerging technologies.
+            <br />
+            <br/>
+            Proven track record of delivering production-ready features from design to deployment, with emphasis on clean code, security best practices, and performance optimization. Always eager to learn, experiment, and contribute to the open-source community.
             </p>
             <br />
             <h3 className="font-semibold text-xl mb-2 dark:text-dark-text-primary">Certifications 📝:</h3>

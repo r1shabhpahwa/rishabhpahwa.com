@@ -7,29 +7,29 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
+    image: images.homelabImage,
+    heading: "Self-Hosted Homelab Infrastructure",
+    description:
+      "<p>A comprehensive self-hosted infrastructure built on <a href='https://www.truenas.com/truenas-scale/' target='_blank' class='underline hover:text-secondary dark:hover:text-dark-accent-primary'>TrueNAS Scale</a>, featuring 14+ production services running on containerized architecture. This homelab serves as both a learning platform and a functional private cloud, demonstrating enterprise-grade DevOps practices in a home environment.<br/><br/><strong>Core Services:</strong> <a href='https://nextcloud.com/' target='_blank' class='underline hover:text-secondary dark:hover:text-dark-accent-primary'>Nextcloud</a> (cloud storage), <a href='https://immich.app/' target='_blank' class='underline hover:text-secondary dark:hover:text-dark-accent-primary'>Immich</a> (photo management), <a href='https://jellyfin.org/' target='_blank' class='underline hover:text-secondary dark:hover:text-dark-accent-primary'>Jellyfin</a> & <a href='https://www.plex.tv/' target='_blank' class='underline hover:text-secondary dark:hover:text-dark-accent-primary'>Plex</a> (media streaming), <a href='https://overseerr.dev/' target='_blank' class='underline hover:text-secondary dark:hover:text-dark-accent-primary'>Overseerr</a> (media requests)<br/><br/><strong>Infrastructure:</strong> <a href='https://www.portainer.io/' target='_blank' class='underline hover:text-secondary dark:hover:text-dark-accent-primary'>Portainer</a> (container orchestration), <a href='https://www.wireguard.com/' target='_blank' class='underline hover:text-secondary dark:hover:text-dark-accent-primary'>WireGuard</a> (VPN tunnel from home server to VPS), <a href='https://traefik.io/' target='_blank' class='underline hover:text-secondary dark:hover:text-dark-accent-primary'>Traefik</a> reverse proxy with SSL/TLS automation, automated backup solutions<br/><br/>All services are secured with HTTPS certificates, accessible via custom domain routing (bitcrate.cc), and managed through infrastructure-as-code principles. The setup includes monitoring, automated updates, and disaster recovery procedures.</p>",
+    websiteLink: "https://www.bitcrate.cc",
+    // techno
+    docker: true,
+    kubernetes: true,
+    linux: true,
+    nginx: true,
+  },
+  {
+    id: 2,
     image: images.eAcademyImage,
     heading: "eAcademy - Online Learning Platform",
     description:
       "<p>eAcademy is a feature-rich online learning platform developed using Django, Python, and PyCharm. It offers a comprehensive set of functionalities to create an interactive and seamless learning experience for both instructors and students. The platform encompasses various features, including course creation and management, membership options, payment gateway integration, and student progress tracking.</p>",
     githubLink: "https://github.com/r1shabhpahwa/eAcademy",
     // techno
+    python: true,
+    django: true,
     html: true,
     css: true,
-    javascript: true,
-  },
-  {
-    id: 2,
-    image: images.zerowasteImage,
-    heading: "ZeroWaste",
-    description:
-      "Developed as a part of the course Advanced Software Engineering at Univeristy of Windsor. Collaborated with a team of four students to create and present a solution addressing common challenges in household waste management, including forgetfulness, e-waste recycling, kitchen waste disposal, automation, and mis-recycling.",
-    //websiteLink: "https://shorten-app.netlify.app/",
-    githubLink: "https://github.com/luv9/zero-waste",
-    // techno
-    html: true,
-    css: true,
-    javascript: true,
-    react: true,
   },
   {
     id: 3,
@@ -40,9 +40,8 @@ const projects = [
     //websiteLink: "https://sunny-page.netlify.app/",
     githubLink: "https://github.com/r1shabhpahwa/ChatGPT-Tweets-Social-Netork-Analysis",
     // techno
-    html: true,
-    css: true,
-    javascript: true,
+    python: true,
+    jupyter: true,
   },
 ];
 
@@ -76,14 +75,14 @@ const CardGrid = () => {
                 <div className="flex flex-row justify-center gap-4 py-10">
                   {proj.websiteLink && (
                     <a
-                      className="relative inline-block text-sm font-medium text-white group focus:outline-none focus:ring"
+                      className="relative inline-block text-sm font-medium text-secondary dark:text-dark-accent-primary active:text-secondary group focus:outline-none focus:ring"
                       href={proj.websiteLink}
                       target="_blank"
                     >
-                      <span className="absolute inset-0 border border-secondary dark:border-dark-accent-primary group-active:border-secondary dark:group-active:border-dark-accent-primary"></span>
-                      <span className="flex items-center gap-3 px-4 py-3 transition-transform bg-secondary dark:bg-dark-accent-primary border border-secondary dark:border-dark-accent-primary active:border-secondary active:bg-secondary dark:active:bg-dark-accent-hover group-hover:-translate-x-1 group-hover:-translate-y-1">
+                      <span className="absolute inset-0 border border-current"></span>
+                      <span className="flex flex-row gap-3 items-center px-4 py-3 transition-transform bg-transparent border border-current group-hover:-translate-x-1 group-hover:-translate-y-1">
                         <GlobeAltIcon className="w-6 h-6" />
-                        Website
+                        Homepage
                       </span>
                     </a>
                   )}
@@ -197,6 +196,83 @@ const CardGrid = () => {
                       className="h-8 object-contain dark:filter dark:invert"
                       src={images.tailwindLogo}
                       alt="tailwind logo"
+                      width={32}
+                      height={32}
+                    />
+                  </div>
+                )}
+                {proj.docker && (
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
+                    <img
+                      className="h-8 object-contain dark:filter dark:invert"
+                      src={images.dockerLogo}
+                      alt="docker logo"
+                      width={32}
+                      height={32}
+                    />
+                  </div>
+                )}
+                {proj.kubernetes && (
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
+                    <img
+                      className="h-8 object-contain dark:filter dark:invert"
+                      src={images.kubernetesLogo}
+                      alt="kubernetes logo"
+                      width={32}
+                      height={32}
+                    />
+                  </div>
+                )}
+                {proj.linux && (
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
+                    <img
+                      className="h-8 object-contain dark:filter dark:invert"
+                      src={images.linuxLogo}
+                      alt="linux logo"
+                      width={32}
+                      height={32}
+                    />
+                  </div>
+                )}
+                {proj.nginx && (
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
+                    <img
+                      className="h-8 object-contain dark:filter dark:invert"
+                      src={images.nginxLogo}
+                      alt="nginx logo"
+                      width={32}
+                      height={32}
+                    />
+                  </div>
+                )}
+                {proj.python && (
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
+                    <img
+                      className="h-8 object-contain dark:filter dark:invert"
+                      src={images.pythonLogo}
+                      alt="python logo"
+                      width={32}
+                      height={32}
+                    />
+                  </div>
+                )}
+                {proj.django && (
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
+                    <img
+                      className="h-8 object-contain dark:filter dark:invert"
+                      src={images.djangoLogo}
+                      alt="django logo"
+                      width={32}
+                      height={32}
+                    />
+                  </div>
+                )}
+                {proj.jupyter && (
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
+                    <img
+                      className="h-8 object-contain dark:filter dark:invert"
+                      src={images.jupyterLogo}
+                      alt="jupyter logo"
                       width={32}
                       height={32}
                     />

@@ -17,7 +17,6 @@ const TwoColumnCard = () => {
           },
           onscreen: {
             y: 0,
-            // rotate: -10,
             transition: {
               type: "spring",
               bounce: 0.4,
@@ -34,7 +33,7 @@ const TwoColumnCard = () => {
             target="_blank"
             className="hover:underline"
           >
-            Ericsson Canada
+            Ericsson
           </a>
           <span className="mt-4 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-dark-text-secondary">
             <CalendarIcon className=" text-neutral-600 h-4 mr-2 dark:text-dark-text-secondary" />
@@ -56,7 +55,7 @@ const TwoColumnCard = () => {
           </div>
         </div>
         <div className="text-base text-primary-400 dark:text-dark-accent-secondary mb-4">
-          Java | JavaScript | Node.js/Express | React | CI/CD | JUnit
+          Java | React | Node.js | Express | Jest | GitLab CI/CD | Trace Compass | NLP
         </div>
         <div className="relative mb-4">
           <div
@@ -71,20 +70,12 @@ const TwoColumnCard = () => {
             </span>
           </div>
         </div>
-        <ul className="text-base text-primary-400 list-inside list-disc dark:text-dark-text-secondary">
-          <li>
-          Improved team efficiency by providing a centralized repository for trace sharing and collaboration, streamlining workflows for network analysis.
-          </li> 
-          <li>
-          Developed a web-based network trace-sharing platform with a React front end and Node.js/Express back end, enabling users to post, interact with, and manage network traces through features such as voting, commenting, saving, etc.
-          </li>
-          <li>
-          Played a key role in developing a Java-based network visualization tool by resolving technical issues, fixing bugs, and implementing critical features to improve reliability and enhance the user interface.
-          </li>
-          <li>
-          Spearheaded the automation of helpdesk support ticket analysis using web scraping, NLP techniques, and data visualization, resulting in weekly reports with actionable insights for the development team, leading to increased customer satisfaction levels.
-          </li>
-
+        <ul className="text-base text-primary-400 list-disc pl-5 space-y-2 dark:text-dark-text-secondary">
+          <li>Collaborated within an Agile team to develop and enhance software solutions, ensuring seamless cross-functional teamwork.</li>
+          <li>Developed a platform for network trace sharing using React and Node.js/Express, centralizing trace data for engineering teams and enabling collaboration through commenting, voting, and saving features.</li>
+          <li>Contributed to the development of a Java-based visualization tool leveraging Trace Compass, an Eclipse open-source platform, resolving technical issues and implementing key features to enhance reliability.</li>
+          <li>Optimized algorithms, achieving a 20% improvement in performance and scalability of the tool for handling large datasets.</li>
+          <li>Spearheaded the automation of helpdesk support ticket analysis using web scraping, NLP techniques, and data visualization, leading to increased customer satisfaction levels.</li>
         </ul>
       </motion.div>
       <motion.div
@@ -114,7 +105,7 @@ const TwoColumnCard = () => {
           </a>
           <span className="mt-4 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-dark-text-secondary">
             <CalendarIcon className="h-4 mr-2 text-neutral-600 dark:text-dark-text-secondary" />
-            August, 2019 - August, 2022
+            JANUARY, 2019 - AUGUST, 2022
           </span>
           <span className="mt-2 text-xs flex items-center justify-start uppercase text-neutral-600 dark:text-dark-text-secondary">
             <BriefcaseIcon className="h-4 mr-2 text-neutral-600 dark:text-dark-text-secondary" />
@@ -132,7 +123,7 @@ const TwoColumnCard = () => {
           </div>
         </div>
         <div className="text-base text-primary-400 dark:text-dark-accent-secondary mb-4">
-          Java 8+ | Spring (Boot, MVC, Cloud),  | JavaScript | Node.js/Express | Microservices | CloudNative
+          Java | Spring Boot | REST APIs | PostgreSQL | Redis | Docker | Kubernetes | JUnit | Mockito
         </div>
         <div className="relative mb-4">
           <div
@@ -148,22 +139,13 @@ const TwoColumnCard = () => {
           </div>
         </div>
 
-        <ul className="text-base text-primary-400 list-inside list-disc dark:text-dark-text-secondary">
-          <li>
-          Developed a SaaS application with integrated payment processors, boosting operational efficiency and revenue potential.
-          </li>
-          <li>
-          Built and deployed microservices on Google Kubernetes Engine, leveraging Pub/Sub for event-driven architecture and GCP solutions.
-          </li>
-          <li>
-          Streamlined deployments by implementing a Jenkins-based CI/CD pipeline with automated testing, enhancing reliability and reducing manual efforts.
-          </li>
-          <li>
-          Strengthened system security by integrating Google ReCAPTCHA and implementing HMAC for data integrity.
-          </li>
-          <li>
-          Implemented secure APIs using BFF pattern, and maintained high system reliability with detailed documentation and robust incident management.
-          </li>
+        <ul className="text-base text-primary-400 list-disc pl-5 space-y-2 dark:text-dark-text-secondary">
+          <li>Collaborated on the development of a SaaS application by integrating existing payment processors, enhancing operational efficiency and revenue potential.</li>
+          <li>Developed microservices and deployed with Google Kubernetes Engine (GKE), ensuring scalable and resilient architectures.</li>
+          <li>Implemented event-driven processing with Google Pub/Sub, optimizing system communication and data consistency.</li>
+          <li>Designed and exposed RESTful APIs using the Backend-for-Frontend (BFF) pattern, ensuring seamless client-server interactions.</li>
+          <li>Strengthened system security by integrating OAuth2 authentication, Google ReCAPTCHA, and implementing HMAC for data integrity.</li>
+          <li>Authored technical documentation on system architecture, API specifications, and troubleshooting guides while mentoring junior engineers through code reviews and onboarding support.</li>
         </ul>
       </motion.div>
       
