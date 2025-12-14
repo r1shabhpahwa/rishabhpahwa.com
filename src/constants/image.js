@@ -14,6 +14,7 @@ import gitLogo from "../assets/logo/git-logo.svg";
 import githubLogo from "../assets/logo/github-logo.svg";
 import nextLogo from "../assets/logo/next-logo.svg";
 import rishabhImage from "../assets/rishabh.png";
+import rishabh2Image from "../assets/rishabh2.JPG";
 import homelabImage from "../assets/projects/homelab-project.png";
 import eAcademyImage from "../assets/projects/eAcademy-project.png";
 import snaImage from "../assets/projects/sna-project.png";
@@ -34,6 +35,8 @@ import postgresqlLogo from "../assets/logo/postgresql-logo.svg";
 import awsLogo from "../assets/logo/aws-logo.svg";
 import djangoLogo from "../assets/logo/django-logo.svg";
 import jupyterLogo from "../assets/logo/jupyter-logo.svg";
+import langchainLogo from "../assets/logo/langchain-logo.svg";
+import ollamaLogo from "../assets/logo/ollama-logo.svg";
 
 export default {
   emailIcon,
@@ -52,6 +55,7 @@ export default {
   githubLogo,
   nextLogo,
   rishabhImage,
+  rishabh2Image,
   homelabImage,
   eAcademyImage,
   snaImage,
@@ -71,5 +75,7 @@ export default {
   awsLogo,
   djangoLogo,
   jupyterLogo,
+  langchainLogo,
+  ollamaLogo,
   rishabhHey
 };

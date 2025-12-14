@@ -85,22 +85,22 @@ const TabSection = () => {
             className="w-full text-primary md:w-1/2 dark:text-dark-text-primary"
           >
             <div className="space-y-4">
-              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+              <p className="text-lg font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
                 I'm a software engineer who loves <span className="font-semibold text-primary dark:text-dark-text-primary">the command line just as much as the frontend</span>. With a Master's from the University of Windsor and <span className="font-semibold text-primary dark:text-dark-text-primary">4+ years building scalable applications</span>, I bridge the gap between <span className="italic">"it works on my machine"</span> and <span className="italic">"it works for thousands of users."</span>
               </p>
-              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+              <p className="text-lg font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
                 For me, software engineering is fundamentally about <span className="font-semibold text-primary dark:text-dark-text-primary">turning complex requirements into reliable, usable solutions</span>. I've developed expertise as a <span className="font-semibold text-primary dark:text-dark-text-primary">full-stack generalist</span>, comfortable across the entire stack—from fine-tuning frontend performance with <span className="font-medium">Next.js and React</span>, to designing secure, scalable backend microservices using <span className="font-medium">Node.js and Spring Boot</span>. I have solid experience tackling challenges like implementing robust authentication (<span className="font-medium">OAuth2, MFA</span>), migrating older systems to cleaner architectures, and ensuring effective deployment to the cloud.
               </p>
-              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+              <p className="text-lg font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
                 But if you really want to know what makes me tick, you have to look at <span className="font-semibold text-primary dark:text-dark-text-primary">what I do when the laptop closes</span>. I am a massive proponent of <span className="font-semibold text-primary dark:text-dark-text-primary">self-hosting and digital sovereignty</span>. I don't just use the cloud; <span className="italic">I built my own at home</span>.
               </p>
-              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+              <p className="text-lg font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
                 I run a comprehensive homelab on <span className="font-medium">TrueNAS Scale</span> that currently powers <span className="font-semibold text-primary dark:text-dark-text-primary">over 14 services</span>. It started as a way to store photos, but it evolved into a playground where I act as the <span className="font-medium">Lead Developer, SysAdmin, and DevOps Engineer</span> all at once.
               </p>
-              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+              <p className="text-lg font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
                 From configuring <span className="font-medium">secure reverse proxies</span> to ensure my Nextcloud instance is accessible (but safe) from a coffee shop, to orchestrating media streaming via <span className="font-medium">Jellyfin</span> for my friends, this hobby keeps me sharp. It forces me to understand <span className="font-semibold text-primary dark:text-dark-text-primary">networking, Docker containerization, and Linux security</span> at a level that most developers rarely touch.
               </p>
-              <p className="text-base font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
+              <p className="text-lg font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
                 At the end of the day, <span className="font-semibold text-primary dark:text-dark-text-primary">I'm a builder</span>. Whether I'm optimizing a database query, automating a CI/CD pipeline, or orchestrating a new containerized service, I love the process of <span className="italic">turning complexity into something reliable and efficient</span>.
               </p>
             </div>
@@ -111,14 +111,14 @@ const TabSection = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "linear", duration: 0.5 }}
-            className="w-full relative md:w-1/2 md:h-[450px]"
+            className="w-full relative md:w-1/2"
           >
             {!isLoaded && (
-              <div className="absolute top-0 rounded-lg left-0 z-50 bg-primary-400 dark:bg-dark-bg-secondary animate-pulse w-full md:h-[450px]" />
+              <div className="absolute top-0 rounded-lg left-0 z-50 bg-primary-400 dark:bg-dark-bg-secondary animate-pulse w-full h-full" />
             )}
             <img
-              src={images.rishabhImage}
-              className="h-full w-full z-10 object-cover object-top rounded-lg filter shadow-lg"
+              src={images.rishabh2Image}
+              className="w-full h-96 object-cover object-bottom md:h-auto md:object-contain md:object-center z-10 rounded-lg filter shadow-lg"
               alt="Image Rishabh"
               loading="lazy"
               width={664}

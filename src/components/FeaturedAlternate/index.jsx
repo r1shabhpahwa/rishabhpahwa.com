@@ -7,6 +7,22 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
+    image: images.eAcademyImage,
+    heading: "RAG-Powered Technical Documentation Assistant",
+    description:
+      "<p>A proof-of-concept <strong>Retrieval-Augmented Generation (RAG)</strong> system built to serve as an intelligent chatbot, capable of answering complex, context-specific questions about my professional experience and personal infrastructure. This project demonstrates proficiency in modern AI/LLM development and full-stack integration.</p><p><strong>Implementation & Model Deployment:</strong> The system is powered by a locally hosted <strong>Llama 3.1 (8B)</strong> model orchestrated via <strong>Ollama</strong>, completely bypassing commercial APIs. The backend, built using <strong>Node.js</strong> and <strong>LangChain.js</strong>, manages the RAG workflow, including data chunking, generating vector embeddings in a <strong>ChromaDB</strong> store, and submitting context-augmented queries to the local LLM instance for a fully self-contained solution. The responsive chat interface is delivered using <strong>React/Next.js</strong>.</p><p><strong>Outcome:</strong> Successfully showcases end-to-end LLM application deployment and validates expertise in containerization and local resource management by hosting the model on personal infrastructure.</p>",
+    // websiteLink: "YOUR_DEMO_LINK_HERE",
+    githubLink: "#",
+    // techno
+    react: true,
+    next: true,
+    nodejs: true,
+    docker: true,
+    langchain: true,
+    ollama: true,
+  },
+  {
+    id: 2,
     image: images.homelabImage,
     heading: "Self-Hosted Homelab Infrastructure",
     description:
@@ -17,19 +33,6 @@ const projects = [
     kubernetes: true,
     linux: true,
     nginx: true,
-  },
-  {
-    id: 2,
-    image: images.eAcademyImage,
-    heading: "eAcademy - Online Learning Platform",
-    description:
-      "<p>eAcademy is a feature-rich online learning platform developed using Django, Python, and PyCharm. It offers a comprehensive set of functionalities to create an interactive and seamless learning experience for both instructors and students. The platform encompasses various features, including course creation and management, membership options, payment gateway integration, and student progress tracking.</p>",
-    githubLink: "https://github.com/r1shabhpahwa/eAcademy",
-    // techno
-    python: true,
-    django: true,
-    html: true,
-    css: true,
   },
   {
     id: 3,
@@ -273,6 +276,28 @@ const CardGrid = () => {
                       className="h-8 object-contain dark:filter dark:invert"
                       src={images.jupyterLogo}
                       alt="jupyter logo"
+                      width={32}
+                      height={32}
+                    />
+                  </div>
+                )}
+                {proj.langchain && (
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
+                    <img
+                      className="h-8 object-contain dark:filter dark:invert"
+                      src={images.langchainLogo}
+                      alt="langchain logo"
+                      width={32}
+                      height={32}
+                    />
+                  </div>
+                )}
+                {proj.ollama && (
+                  <div className="flex flex-col justify-center items-center gap-4 py-4 px-4 bg-gray-50 rounded-full filter shadow-md cursor-pointer hover:bg-neutral-300 dark:bg-dark-bg-secondary dark:hover:bg-dark-bg-tertiary dark:border dark:border-dark-border">
+                    <img
+                      className="h-8 object-contain dark:filter dark:invert"
+                      src={images.ollamaLogo}
+                      alt="ollama logo"
                       width={32}
                       height={32}
                     />
