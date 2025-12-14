@@ -72,12 +72,11 @@ const TwoColumnCard = () => {
         </div>
 
         <ul className="text-base text-primary-400 list-disc pl-5 space-y-2 dark:text-dark-text-secondary">
-          <li>Working on architecting a multi-tenant managed services platform with session-based authentication, MFA (TOTP), OAuth2, and granular RBAC for MSP operations.</li>
-          <li>Developing fax management module with Telnyx API integration, multi-layered webhook security, and tenant-isolated media storage.</li>
-          <li>Building full-stack solution with responsive Next.js frontend and Node.js/Express backend APIs, implementing CSRF protection, retry logic, and typed error handling.</li>
-          <li>Implementing secure authentication system with AES-GCM encrypted MFA secrets, rotating session tokens, and rate-limited endpoints.</li>
-          <li>Integrating with ConnectWise CRM for support ticket synchronization and workflow automation across platforms.</li>
-          <li>Establishing code quality standards with ESLint 9, pre-commit hooks, and clean modular architecture with TanStack Query for server-state caching.</li>
+          <li>Architected multi-tenant managed services platform with session-based auth, MFA, OAuth2, and RBAC.</li>
+          <li>Built fax management system with Telnyx API integration and secure webhook handling.</li>
+          <li>Developed full-stack application using Next.js, TypeScript, Node.js, and PostgreSQL with Prisma ORM.</li>
+          <li>Integrated ConnectWise CRM for automated ticket syncing and customer workflow management.</li>
+          <li>Established CI/CD pipelines with Docker containerization and automated deployments.</li>
         </ul>
       </motion.div>
       <motion.div
@@ -141,11 +140,11 @@ const TwoColumnCard = () => {
           </div>
         </div>
         <ul className="text-base text-primary-400 list-disc pl-5 space-y-2 dark:text-dark-text-secondary">
-          <li>Collaborated within an Agile team to develop and enhance software solutions, ensuring seamless cross-functional teamwork.</li>
-          <li>Developed a platform for network trace sharing using React and Node.js/Express, centralizing trace data for engineering teams and enabling collaboration through commenting, voting, and saving features.</li>
-          <li>Contributed to the development of a Java-based visualization tool leveraging Trace Compass, an Eclipse open-source platform, resolving technical issues and implementing key features to enhance reliability.</li>
-          <li>Optimized algorithms, achieving a 20% improvement in performance and scalability of the tool for handling large datasets.</li>
-          <li>Spearheaded the automation of helpdesk support ticket analysis using web scraping, NLP techniques, and data visualization, leading to increased customer satisfaction levels.</li>
+          <li>Developed network trace sharing platform with React and Node.js for engineering collaboration.</li>
+          <li>Built Java visualization tool using Trace Compass, improving performance by 20%.</li>
+          <li>Implemented unit testing with Jest framework, reducing post-deployment bugs by 15%.</li>
+          <li>Integrated CI/CD pipelines using GitLab for streamlined deployments and code quality.</li>
+          <li>Automated helpdesk ticket analysis using NLP and web scraping for actionable insights.</li>
         </ul>
       </motion.div>
       <motion.div
@@ -210,12 +209,12 @@ const TwoColumnCard = () => {
         </div>
 
         <ul className="text-base text-primary-400 list-disc pl-5 space-y-2 dark:text-dark-text-secondary">
-          <li>Collaborated on the development of a SaaS application by integrating existing payment processors, enhancing operational efficiency and revenue potential.</li>
-          <li>Developed microservices and deployed with Google Kubernetes Engine (GKE), ensuring scalable and resilient architectures.</li>
-          <li>Implemented event-driven processing with Google Pub/Sub, optimizing system communication and data consistency.</li>
-          <li>Designed and exposed RESTful APIs using the Backend-for-Frontend (BFF) pattern, ensuring seamless client-server interactions.</li>
-          <li>Strengthened system security by integrating OAuth2 authentication, Google ReCAPTCHA, and implementing HMAC for data integrity.</li>
-          <li>Authored technical documentation on system architecture, API specifications, and troubleshooting guides while mentoring junior engineers through code reviews and onboarding support.</li>
+          <li>Developed SaaS application with integrated payment processors for enhanced efficiency.</li>
+          <li>Built and deployed microservices on Google Kubernetes Engine (GKE).</li>
+          <li>Implemented event-driven processing with Google Pub/Sub for system communication.</li>
+          <li>Designed RESTful APIs using Backend-for-Frontend (BFF) pattern.</li>
+          <li>Implemented OAuth2, Google ReCAPTCHA, and HMAC for security and data integrity.</li>
+          <li>Mentored junior engineers and authored technical documentation.</li>
         </ul>
       </motion.div>
 
