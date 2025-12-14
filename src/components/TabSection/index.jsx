@@ -101,7 +101,7 @@ const TabSection = () => {
                 From configuring <span className="font-medium">secure reverse proxies</span> to ensure my Nextcloud instance is accessible (but safe) from a coffee shop, to orchestrating media streaming via <span className="font-medium">Jellyfin</span> for my friends, this hobby keeps me sharp. It forces me to understand <span className="font-semibold text-primary dark:text-dark-text-primary">networking, Docker containerization, and Linux security</span> at a level that most developers rarely touch.
               </p>
               <p className="text-lg font-hero font-light leading-relaxed text-neutral-700 dark:text-dark-text-secondary">
-                At the end of the day, <span className="font-semibold text-primary dark:text-dark-text-primary">I'm a builder</span>. Whether I'm optimizing a database query, or orchestrating a new containerized service, I love the process of <span className="italic">turning complexity into something reliable and efficient</span>.
+                At the end of the day, <span className="font-semibold text-primary dark:text-dark-text-primary">I'm a builder</span>. Whether I'm optimizing a database query, or automating a CI/CD pipeline, I love the process of <span className="italic">turning complexity into something reliable and efficient</span>.
               </p>
             </div>
           </motion.div>

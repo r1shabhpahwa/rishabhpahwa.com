@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
-    image: images.eAcademyImage,
+    image: images.ragProjectImage,
     heading: "RAG-Powered Technical Documentation Assistant",
     description:
       "<p>A proof-of-concept <strong>Retrieval-Augmented Generation (RAG)</strong> system built to serve as an intelligent chatbot, capable of answering complex, context-specific questions about my professional experience and personal infrastructure. This project demonstrates proficiency in modern AI/LLM development and full-stack integration.</p><p><strong>Implementation & Model Deployment:</strong> The system is powered by a locally hosted <strong>Llama 3.1 (8B)</strong> model orchestrated via <strong>Ollama</strong>, completely bypassing commercial APIs. The backend, built using <strong>Node.js</strong> and <strong>LangChain.js</strong>, manages the RAG workflow, including data chunking, generating vector embeddings in a <strong>ChromaDB</strong> store, and submitting context-augmented queries to the local LLM instance for a fully self-contained solution. The responsive chat interface is delivered using <strong>React/Next.js</strong>.</p><p><strong>Outcome:</strong> Successfully showcases end-to-end LLM application deployment and validates expertise in containerization and local resource management by hosting the model on personal infrastructure.</p>",

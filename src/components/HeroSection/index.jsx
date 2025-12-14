@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import images from '../../constants/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronDownIcon } from '@heroicons/react/outline';
 
 const socials = [
   {
@@ -127,6 +128,26 @@ const HeroSection = () => {
             ))}
           </ul>
         </div>
+
+        {/* Scroll Down Indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:flex flex-col items-center gap-2"
+        >
+  
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          >
+            <ChevronDownIcon className="h-5 w-5 text-primary-400 dark:text-dark-text-secondary" />
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

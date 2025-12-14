@@ -16,8 +16,8 @@ import nextLogo from "../assets/logo/next-logo.svg";
 import rishabhImage from "../assets/rishabh.png";
 import rishabh2Image from "../assets/rishabh2.JPG";
 import homelabImage from "../assets/projects/homelab-project.png";
-import eAcademyImage from "../assets/projects/eAcademy-project.png";
 import snaImage from "../assets/projects/sna-project.png";
+import ragProjectImage from "../assets/projects/rag-project.png";
 import errorIllustration from "../assets/illustrations/404-vector.svg";
 import successIllustration from "../assets/illustrations/success-vector.svg";
 import rishabhHey from "../assets/icons/rishabh_hey.png"
@@ -57,8 +57,8 @@ export default {
   rishabhImage,
   rishabh2Image,
   homelabImage,
-  eAcademyImage,
   snaImage,
+  ragProjectImage,
   errorIllustration,
   successIllustration,
   brandLogoLight,
