@@ -88,7 +88,7 @@ const TabSection = () => {
               Software Developer
             </h2>
             <p className="text-base font-normal text-neutral-700 dark:text-dark-text-secondary">
-            Full-stack software developer with 6+ years of experience building scalable web applications and cloud-native solutions. Graduate from University of Windsor with a Master's in Applied Computing, combining strong academic foundation with hands-on industry experience.
+            Full-stack software developer with 4+ years of experience building scalable web applications and cloud-native solutions. Graduate from University of Windsor with a Master's in Applied Computing, combining strong academic foundation with hands-on industry experience.
             <br />
             <br />
             Specialized in modern full-stack development with expertise in React, Next.js, Node.js, Spring Boot, and cloud platforms (AWS, GCP, Azure). Strong background in microservices architecture, RESTful APIs, authentication systems (OAuth2, MFA), and CI/CD automation using Docker and Kubernetes.
