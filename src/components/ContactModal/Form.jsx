@@ -10,30 +10,23 @@ export const Form = () => {
     formState: { isSubmitting, errors },
   } = useForm();
 
-  const sendEmail = (formData) => {
-    emailjs
-      .send(
+  const sendEmail = async (formData) => {
+    try {
+      console.log("Sending email with data:", formData);
+      const result = await emailjs.send(
         import.meta.env.VITE_EMAIL_JS_SERVICE_ID, // EmailJS service ID
         import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID, // EmailJS template ID
         formData,
         import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY // EmailJS public key
-      )
-      .then(
-        (result) => {
-          setSuccessState(true);
-          return result;
-        },
-        (error) => {
-          setErrorState(true);
-          return error;
-        }
       );
-
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve();
-      }, 2000);
-    });
+      console.log("Email sent successfully:", result);
+      setSuccessState(true);
+      return result;
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      setErrorState(true);
+      throw error;
+    }
   };
 
   const [successState, setSuccessState] = useState(false);
